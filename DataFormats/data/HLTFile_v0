@@ -189,24 +189,27 @@ HLT_PFMET150_v*										hltAK5PFJetL1FastL2L3Corrected						       2
 HLT_PFMET150_v*										hltAntiKT5PFJets						       	       2
 HLT_MET80_Parked_v*									hltMET80								       1
 HLT_MonoCentralPFJet80_PFMETnoMu105_NHEF0p95_v*						hltPFMETnoMu105			                                               1
-HLT_MonoCentralPFJet80_PFMETnoMu105_NHEF0p95_v*						hltCentralPFJet80			                               	       2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+HLT_MonoCentralPFJet80_PFMETnoMu105_NHEF0p95_v* 					hltCentralPFJet80			                               	       2
+HLT_MonoCentralPFJet80_PFMETnoMu95_NHEF0p95_v*                                          hltPFMHTWOM95                                                                  1
+HLT_MonoCentralPFJet80_PFMETnoMu95_NHEF0p95_v*                                          hltCentralPFJet80                                                              2
+// Single Photon
+HLT_Photon30_CaloIdVL_v*                                                                hltEG30CaloIdVLHEFilter                                                        1
+HLT_Photon30_CaloIdVL_v*                                                                hltPhoton30CaloIdVLHEFilter                                                    1
+HLT_Photon30_CaloIdVL_IsoL_v*                                                           hltPhoton30CaloIdVLIsoLTrackIsoFilter                                          1
+HLT_Photon50_CaloIdVL_v*                                                                hltPhoton50CaloIdVLHEFilter                                                    1
+HLT_Photon50_CaloIdVL_IsoL_v*                                                           hltPhoton50CaloIdVLIsoLTrackIsoFilter                                          1
+HLT_Photon75_CaloIdVL_v*                                                                hltPhoton75CaloIdVLHEFilter                                                    1
+HLT_Photon75_CaloIdVL_IsoL_v*                                                           hltPhoton75CaloIdVLIsoLTrackIsoFilter                                          1
+HLT_Photon90_CaloIdVL_v*                                                                hltPhoton90CaloIdVLHEFilter                                                    1
+HLT_Photon90_CaloIdVL_IsoL_v*                                                           hltPhoton90CaloIdVLIsoLTrackIsoFilter                                          1
+HLT_Photon135_v*                                                                        hltPhoton135HEFilter                                                           1
+HLT_Photon150_v*                                                                        hltPhoton150HEFilter                                                           1
+HLT_Photon250_NoHE_v*                                                                   hltEG300EtFilter                                                               1
+HLT_Photon300_NoHE_v*                                                                   hltEG300EtFilter                                                               1
+// Photon in DoubleElectron
+HLT_Photon22_R9Id90_HE10_Iso40_EBOnly_v*                                                hltPhoton22R9Id90HE10Iso40EBOnlyTrackIsoLastFilter                             1
+HLT_Photon36_R9Id90_HE10_Iso40_EBOnly_v*                                                hltPhoton36R9Id90HE10Iso40EBOnlyTrackIsoLastFilter                             1
+HLT_Photon50_R9Id90_HE10_Iso40_EBOnly_v*                                                hltPhoton50R9Id90HE10Iso40EBOnlyTrackIsoLastFilter                             1
+HLT_Photon75_R9Id90_HE10_Iso40_EBOnly_v*                                                hltPhoton75R9Id90HE10Iso40EBOnlyTrackIsoLastFilter                             1
+HLT_Photon90_R9Id90_HE10_Iso40_EBOnly_v*                                                hltPhoton90R9Id90HE10Iso40EBOnlyTrackIsoLastFilter                             1
 
