@@ -1,5 +1,5 @@
-#ifndef BACONANA_NTUPLER_TRIGGERRECORD_HH
-#define BACONANA_NTUPLER_TRIGGERRECORD_HH
+#ifndef BACONANA_DATAFORMATS_TRIGGERRECORD_HH
+#define BACONANA_DATAFORMATS_TRIGGERRECORD_HH
 
 #include <vector>
 #include <string>
@@ -24,7 +24,7 @@ public:
   unsigned int  hltPathIndex;  // HLT path index in trigger menu
 
   // map between trigger object name and bacon trigger object bit
-  std::vector<std::pair<std::string,unsigned int>> objectMap;
+  std::vector< std::pair<std::string,unsigned int> > objectMap;
 };
 
 }
