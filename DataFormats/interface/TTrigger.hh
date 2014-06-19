@@ -9,14 +9,14 @@ namespace baconhep
   class TTrigger 
   {
     public:
-    TTrigger(std::string iFileName);
-      ~TTrigger(){}
+    TTrigger(const std::string iFileName);
+    ~TTrigger(){}
     //Methods
-    int  getTriggerBit(std::string iName);
-    int* getTriggerObjectBits(std::string iName);
-    int  getTriggerObjectBit(std::string iName,std::string iObjName);
-    bool pass(std::string iName,TriggerBits &iTrig);
-    bool passObj(std::string iName,TriggerObjects &iTrigObj);
+    int  getTriggerBit(const std::string iName) const;
+    int* getTriggerObjectBits(const std::string iName) const;
+    int  getTriggerObjectBit(const std::string iName, const std::string iObjName) const;
+    bool pass(const std::string iName, const TriggerBits &iTrig) const;
+    bool passObj(const std::string iName, const TriggerObjects &iTrigObj) const;
 
     std::vector<baconhep::TriggerRecord> fRecords;
   };

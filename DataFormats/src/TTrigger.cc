@@ -8,7 +8,8 @@
 
 using namespace baconhep;
 
-TTrigger::TTrigger(std::string iFileName) { 
+//--------------------------------------------------------------------------------------------------
+TTrigger::TTrigger(const std::string iFileName) { 
   std::ifstream lFile(iFileName.c_str());
   assert(lFile.is_open());
   int         lTrigIndex       = -1;
@@ -37,7 +38,9 @@ TTrigger::TTrigger(std::string iFileName) {
     lFile.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
   }
 }
-int TTrigger::getTriggerBit(std::string iName) { 
+
+//--------------------------------------------------------------------------------------------------
+int TTrigger::getTriggerBit(const std::string iName) const { 
   int lId = -1;
   for(unsigned int i0 = 0; i0 < fRecords.size(); i0++) { 
     if(iName == fRecords[i0].hltPattern) lId = i0;    
@@ -45,7 +48,9 @@ int TTrigger::getTriggerBit(std::string iName) {
   if(lId == -1) std::cout << "=== Missing Trigger ==" << iName << std::endl;
   return lId;
 }
-int* TTrigger::getTriggerObjectBits(std::string iName) { 
+
+//--------------------------------------------------------------------------------------------------
+int* TTrigger::getTriggerObjectBits(const std::string iName) const { 
   int lId = getTriggerBit(iName);
   int *lOut;
   if(lId == -1) {lOut = new int[1]; lOut[0] = -1; return lOut;}
@@ -57,7 +62,9 @@ int* TTrigger::getTriggerObjectBits(std::string iName) {
   }
   return lOut;
 }
-int TTrigger::getTriggerObjectBit(std::string iName,std::string iObjName) { 
+
+//--------------------------------------------------------------------------------------------------
+int TTrigger::getTriggerObjectBit(const std::string iName, const std::string iObjName) const { 
   int lId = getTriggerBit(iName);
   if(lId == -1) return lId;
   for(unsigned int i0 = 0; i0 < fRecords[lId].objectMap.size(); i0++) { 
@@ -67,12 +74,16 @@ int TTrigger::getTriggerObjectBit(std::string iName,std::string iObjName) {
   }
   return lId;
 }
-bool TTrigger::pass(std::string iName,TriggerBits &iTrig) {
+
+//--------------------------------------------------------------------------------------------------
+bool TTrigger::pass(const std::string iName, const TriggerBits &iTrig) const {
   int lId = getTriggerBit(iName);
   if(lId == -1) return false;
   return iTrig[lId];
 }
-bool TTrigger::passObj(std::string iName,TriggerObjects &iTrigObj) {
+
+//--------------------------------------------------------------------------------------------------
+bool TTrigger::passObj(const std::string iName, const TriggerObjects &iTrigObj) const {
   int lId = getTriggerBit(iName);
   if(lId == -1) return false;
   bool lPass = false;
