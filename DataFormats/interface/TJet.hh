@@ -25,7 +25,9 @@ namespace baconhep
       {}
       ~TJet(){}
     
-      float pt, eta, phi, mass, ptRaw,unc;                   // kinematics
+      float pt,    eta,    phi,    mass,    ptRaw,   unc;                   // kinematics
+      //float ptchs, etachs, phichs, masschs, ptRawchs,unc;                   // kinematics
+      //float ptpup, etapup, phipup, masspup, ptRawpup,unc;                   // kinematics
       float area;                                        // jet area (from FastJet)
       float d0, dz;                                      // impact parameter of leading charged constituent
       float csv,csv1,csv2;                               // combined secondary vertex based b-tagger and for two leading subjets
