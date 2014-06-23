@@ -212,4 +212,21 @@ HLT_Photon36_R9Id90_HE10_Iso40_EBOnly_v*                                        
 HLT_Photon50_R9Id90_HE10_Iso40_EBOnly_v*                                                hltPhoton50R9Id90HE10Iso40EBOnlyTrackIsoLastFilter                             1
 HLT_Photon75_R9Id90_HE10_Iso40_EBOnly_v*                                                hltPhoton75R9Id90HE10Iso40EBOnlyTrackIsoLastFilter                             1
 HLT_Photon90_R9Id90_HE10_Iso40_EBOnly_v*                                                hltPhoton90R9Id90HE10Iso40EBOnlyTrackIsoLastFilter                             1
-
+// JetHT triggers
+HLT_HT200_v*                                                                            hltHT200 
+                 1
+HLT_HT250_v*                                                                            hltHT250                                                                       1
+HLT_HT300_v*                                                                            hltHT300                                                                       1
+HLT_HT350_v*                                                                            hltHT350                                                                       1
+HLT_HT400_v*                                                                            hltHT400                                                                       1
+HLT_HT450_v*                                                                            hltHT450                                                                       1
+HLT_HT500_v*                                                                            hltHT500                                                                       1
+HLT_HT550_v*                                                                            hltHT550                                                                       1
+HLT_HT650_v*                                                                            hltHT650                                                                       1
+HLT_HT750_v*                                                                            hltHT750                                                                       1
+// VBFParked triggers
+HLT_DiJet20_MJJ650_AllJets_DEta3p5_HT120_VBF_v*                                         hltDiCaloJet20MJJ650AllJetsDEta3p5Filter                                       1
+HLT_DiJet30_MJJ700_AllJets_DEta3p5_VBF_v*                                               hltDiCaloJet30MJJ700AllJetsDEta3p5Filter                                       1
+HLT_DiJet35_MJJ650_AllJets_DEta3p5_VBF_v*                                               hltDiCaloJet35MJJ650AllJetsDEta3p5Filter                                       1
+HLT_DiJet35_MJJ700_AllJets_DEta3p5_VBF_v*                                               hltDiCaloJet35MJJ700AllJetsDEta3p5Filter                                       1
+HLT_DiJet35_MJJ750_AllJets_DEta3p5_VBF_v*                                               hltDiCaloJet35MJJ750AllJetsDEta3p5Filter                                       1
