@@ -213,8 +213,7 @@ HLT_Photon50_R9Id90_HE10_Iso40_EBOnly_v*                                        
 HLT_Photon75_R9Id90_HE10_Iso40_EBOnly_v*                                                hltPhoton75R9Id90HE10Iso40EBOnlyTrackIsoLastFilter                             1
 HLT_Photon90_R9Id90_HE10_Iso40_EBOnly_v*                                                hltPhoton90R9Id90HE10Iso40EBOnlyTrackIsoLastFilter                             1
 // JetHT triggers
-HLT_HT200_v*                                                                            hltHT200 
-                 1
+HLT_HT200_v*                                                                            hltHT200                                                                       1
 HLT_HT250_v*                                                                            hltHT250                                                                       1
 HLT_HT300_v*                                                                            hltHT300                                                                       1
 HLT_HT350_v*                                                                            hltHT350                                                                       1
