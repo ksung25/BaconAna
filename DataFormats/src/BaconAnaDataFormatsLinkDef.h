@@ -1,6 +1,7 @@
 #ifndef BACONANA_DATAFORMATS_LINKDEF_H
 #define BACONANA_DATAFORMATS_LINKDEF_H
 #include "BaconAna/DataFormats/interface/TEventInfo.hh"
+#include "BaconAna/DataFormats/interface/TSusyGen.hh"
 #include "BaconAna/DataFormats/interface/TGenEventInfo.hh"
 #include "BaconAna/DataFormats/interface/TGenParticle.hh"
 #include "BaconAna/DataFormats/interface/TElectron.hh"
@@ -24,6 +25,7 @@
 #pragma link C++ namespace baconhep;
 
 #pragma link C++ class baconhep::TEventInfo+;
+#pragma link C++ class baconhep::TSusyGen+;
 #pragma link C++ class baconhep::TGenEventInfo+;
 #pragma link C++ class baconhep::TGenParticle+;
 #pragma link C++ class baconhep::TElectron+;
