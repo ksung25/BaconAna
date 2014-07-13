@@ -38,9 +38,11 @@ namespace baconhep
     float pt_m3,ptraw_m3,eta_m3,phi_m3,mass_m3,area_m3;    // Jet Info with fitlering Tight 
     float c2_0,c2_0P2,c2_0P5,c2_1P0,c2_2P0;                // Correlation function of varying exponent
     float qjet;
+    float sj1_pt,   sj1_eta,sj1_phi ,sj1_m;
+    float sj2_pt,   sj2_eta,sj2_phi ,sj2_m;
     float sj1_npart,sj1_ptd,sj1_maxW,sj1_minW;
     float sj2_npart,sj2_ptd,sj2_maxW,sj2_minW;
-    ClassDef(TAddJet,3)
+    ClassDef(TAddJet,4)
   };
 }
 #endif
