@@ -17,7 +17,7 @@ namespace baconhep
       tau1(-1),tau2(-1),tau3(-1),tau4(-1),
       prunedm(0),
       nCharged(0), nNeutrals(0), nParticles(0),
-      beta(0),betaStar(0),dR2Mean(0),ptD(0),q03(0),q(0),qsq(0),
+      beta(0),betaStar(0),dR2Mean(0),ptD(0),minW(0),q03(0),q(0),qsq(0),
       pullY(0),pullPhi(0),pullAngle(0),chPullY(0),chPullPhi(0),neuPullY(0),neuPullPhi(0),
       chEmFrac(0), neuEmFrac(0), chHadFrac(0), neuHadFrac(0),
       mcFlavor(0), mcFlavorPhys(0),
@@ -38,7 +38,7 @@ namespace baconhep
       float prunedm;                                     // Pruned Jet Mass
       unsigned int nCharged, nNeutrals, nParticles;      // constituent multiplicity
       float beta,betaStar,dR2Mean;                       // PU Jet Id Variables
-      float ptD,q03,q,qsq,pullY,pullPhi,pullAngle;       // Additional color flow variables
+      float ptD,minW,q03,q,qsq,pullY,pullPhi,pullAngle;       // Additional color flow variables
       float chPullY,chPullPhi,neuPullY,neuPullPhi;
       float chEmFrac, neuEmFrac, chHadFrac, neuHadFrac;  // fractional contribution by type
       int mcFlavor,mcFlavorPhys;                         // Flavor
