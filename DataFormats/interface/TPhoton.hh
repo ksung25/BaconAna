@@ -16,11 +16,11 @@ namespace baconhep
       trkIso04(-1), ecalIso04(-1), hcalIso04(-1),
       chHadIso03(-1), gammaIso03(-1), neuHadIso03(-1),
       isoForFsr03(-1), mvaNothingGamma(0),mva(0),
-      sthovere(0),hovere(0), sieie(0), sipip(0),
+      hovere(0), sthovere(0), sieie(0), sipip(0),
       fiducialBits(0),
       typeBits(0),
       scID(-1),
-      hasPixelSeed(false), isConv(false);
+      hasPixelSeed(false), isConv(false),
       hltMatchBits(0)
       {}
       ~TPhoton(){}
