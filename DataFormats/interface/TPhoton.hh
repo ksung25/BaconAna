@@ -16,11 +16,11 @@ namespace baconhep
       trkIso04(-1), ecalIso04(-1), hcalIso04(-1),
       chHadIso03(-1), gammaIso03(-1), neuHadIso03(-1),
       isoForFsr03(-1), mvaNothingGamma(0),mva(0),
-      hovere(0), sieie(0), sipip(0),
+      sthovere(0),hovere(0), sieie(0), sipip(0),
       fiducialBits(0),
       typeBits(0),
       scID(-1),
-      hasPixelSeed(false),
+      hasPixelSeed(false), isConv(false);
       hltMatchBits(0)
       {}
       ~TPhoton(){}
@@ -35,12 +35,14 @@ namespace baconhep
       float         mvaNothingGamma;                      // PF MVA for gamma detection
       float         mva;                                  // H=>gg Photon MVA
       float         hovere;                               // H/E
+      float         sthovere;                             // Single tower H/E (https://twiki.cern.ch/twiki/bin/viewauth/CMS/HoverE2012)
       float         sieie, sipip;                         // shower shape
       unsigned int  fiducialBits;                         // ECAL fiducial region
       unsigned int  typeBits;                             // photon type
       int           scID;                                 // supercluster ID (unique per event)
       bool          hasPixelSeed;                         // has pixel seed?
-      bool          isConv;                               // matched to a reconstructed conversion?
+      bool          passElectronVeto;                     // if false, its not a photon
+      bool          isConv;                               
       TriggerObjects hltMatchBits;                         // HLT matches
           
     ClassDef(TPhoton,1)
