@@ -3,7 +3,9 @@
 #include "BaconAna/DataFormats/interface/TEventInfo.hh"
 #include "BaconAna/DataFormats/interface/TSusyGen.hh"
 #include "BaconAna/DataFormats/interface/TGenEventInfo.hh"
+#include "BaconAna/DataFormats/interface/TGenWeight.hh"
 #include "BaconAna/DataFormats/interface/TGenParticle.hh"
+#include "BaconAna/DataFormats/interface/TGenJet.hh"
 #include "BaconAna/DataFormats/interface/TElectron.hh"
 #include "BaconAna/DataFormats/interface/TMuon.hh"
 #include "BaconAna/DataFormats/interface/TTau.hh"
@@ -28,6 +30,8 @@
 #pragma link C++ class baconhep::TSusyGen+;
 #pragma link C++ class baconhep::TGenEventInfo+;
 #pragma link C++ class baconhep::TGenParticle+;
+#pragma link C++ class baconhep::TGenJet+;
+#pragma link C++ class baconhep::TGenWeight+;
 #pragma link C++ class baconhep::TElectron+;
 #pragma link C++ class baconhep::TMuon+;
 #pragma link C++ class baconhep::TTau+;
