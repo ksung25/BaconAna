@@ -44,6 +44,10 @@ namespace baconhep
     float iso04       ;
     float iso05       ;
 
+    float mtrim       ;
+    float tau1        ;
+    float tau2        ;
+
     ClassDef(TGenJet,1)
   };
 }
