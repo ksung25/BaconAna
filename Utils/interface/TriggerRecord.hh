@@ -14,7 +14,7 @@ public:
     hltPattern   = name;
     baconTrigBit = value;
     hltPathName  = "";
-    hltPathIndex = (unsigned int)-1;
+    hltPathIndex = (unsigned int)-1;  // defaults to maximum unsigned int value
   }
   ~TriggerRecord(){}
 
