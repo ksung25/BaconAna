@@ -1,50 +1,84 @@
-#include "BaconAna/Utils/interface/RunLumiRangeMap.hh"
-#include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/json_parser.hpp>
-#include <boost/lexical_cast.hpp>
-
-using namespace baconhep;
+#include "BaconAna/Utils/interface/RunLumiRangeMap.h"
+#include "BaconAna/Utils/interface/Jzon.h"
 
 //--------------------------------------------------------------------------------------------------
-void RunLumiRangeMap::addJSONFile(const std::string &filepath)
-{
-  // read json file into boost property tree
-  boost::property_tree::ptree jsonTree;
-  boost::property_tree::read_json(filepath,jsonTree);
-  
-  // loop through boost property tree and fill the MapType structure with the list of good lumi ranges for each run
-  for(boost::property_tree::ptree::const_iterator it = jsonTree.begin(); it!=jsonTree.end(); ++it) {
-    unsigned int runNum = boost::lexical_cast<unsigned int>(it->first);
-    MapType::mapped_type &lumiPairList = fMap[runNum];
-    boost::property_tree::ptree lumiPairListTree = it->second;
-    for(boost::property_tree::ptree::const_iterator jt = lumiPairListTree.begin(); jt!=lumiPairListTree.end(); ++jt) {
-      boost::property_tree::ptree lumiPairTree = jt->second;
-      if(lumiPairTree.size()==2) {
-        unsigned int firstLumi = boost::lexical_cast<unsigned int>(lumiPairTree.begin()->second.data());
-        unsigned int lastLumi  = boost::lexical_cast<unsigned int>((++lumiPairTree.begin())->second.data());
-        lumiPairList.push_back(std::pair<unsigned int, unsigned int>(firstLumi,lastLumi));
-      }
-    }
-  }
-}
-
-//--------------------------------------------------------------------------------------------------
-bool RunLumiRangeMap::hasRunLumi(const RunLumiPairType &runLumi) const
+bool RunLumiRangeMap::HasRunLumi(const RunLumiPairType &runLumi) const
 {
   // Check if a given run,lumi pair is included in the mapped lumi ranges
 
-  // check if run is included in the map
+  //check if run is included in the map
   MapType::const_iterator it = fMap.find(runLumi.first);
-  if(it!=fMap.end()) {
+  if (it!=fMap.end()) {
     //check lumis
     const MapType::mapped_type &lumiPairList = it->second;
-    for(MapType::mapped_type::const_iterator jt = lumiPairList.begin(); jt<lumiPairList.end(); ++jt) {
-      if(runLumi.second >= jt->first && runLumi.second <= jt->second) {
+    for (MapType::mapped_type::const_iterator jt = lumiPairList.begin(); jt<lumiPairList.end(); ++jt) {
+      if (runLumi.second >= jt->first && runLumi.second <= jt->second) {
         //found lumi in accepted range
-        return true;
+        return kTRUE;
       }
     }
   }
 
-  return false;
+  return kFALSE;
+
+}
+
+//--------------------------------------------------------------------------------------------------
+void RunLumiRangeMap::AddJSONFile(const std::string &filepath) 
+{
+
+  //read json without boost bullshit
+  Jzon::Object rootNode;
+  Jzon::FileReader::ReadFile(filepath, rootNode);
+    
+  //Build a map of lumi stuff 
+  for (Jzon::Object::iterator it = rootNode.begin(); it != rootNode.end(); ++it) { 
+    unsigned int runNumber = (unsigned int) atoi(((*it).first).c_str());
+    MapType::mapped_type &lumiPairList = fMap[runNumber];
+    const Jzon::Array &pLumis = rootNode.Get((*it).first).AsArray();
+    for (Jzon::Array::const_iterator it = pLumis.begin(); it != pLumis.end(); ++it) { 
+      Jzon::Array lumiPairTree = (*it).AsArray();
+      if (lumiPairTree.GetCount()==2) {
+        UInt_t firstLumi = (*   (lumiPairTree.begin()) ).ToInt();
+        UInt_t lastLumi =  (*(++(lumiPairTree.begin()))).ToInt();
+        lumiPairList.push_back(std::pair<UInt_t,UInt_t>(firstLumi,lastLumi));
+      }
+    }
+  }
+
+  //dump run and lumi ranges from MapType structure to verify correct json parsing
+  if (0) {
+    printf("Iterating over parsed JSON:\n");
+    for (MapType::const_iterator it = fMap.begin(); it != fMap.end(); ++it) {
+      printf("  Run %u:\n",it->first);
+      for (MapType::mapped_type::const_iterator jt = it->second.begin(); jt < it->second.end(); ++jt) {
+        printf("    Lumis %u - %u\n",jt->first,jt->second);
+      }
+    }
+
+  }
+
+}
+
+//--------------------------------------------------------------------------------------------------
+void RunLumiRangeMap::FillRunLumiSet(const RunLumiSet &rlSet)
+{
+  fMap.clear();
+  const RunLumiSet::SetType &theset = rlSet.runLumiSet();
+
+  UInt_t firstlumi = 0;
+  for (RunLumiSet::SetType::const_iterator it = theset.begin(); it!=theset.end(); ++it) {
+
+    if (firstlumi==0) firstlumi = it->second;
+    MapType::mapped_type &lumiPairList = fMap[it->first];
+
+    RunLumiSet::SetType::const_iterator itnext = it;
+    ++itnext;
+
+    if ( itnext==theset.end() || itnext->first!=it->first || itnext->second!=(it->second+1) ) {
+      lumiPairList.push_back(std::pair<UInt_t,UInt_t>(firstlumi,it->second));
+      firstlumi = 0;
+    }
+    
+  }
 }
