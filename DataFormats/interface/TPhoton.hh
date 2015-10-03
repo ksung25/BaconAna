@@ -20,7 +20,7 @@ namespace baconhep
       fiducialBits(0),
       typeBits(0),
       scID(-1),
-      hasPixelSeed(false), isConv(false),
+      hasPixelSeed(false), passElectronVeto(true), isConv(false),
       hltMatchBits(0)
       {}
       ~TPhoton(){}
