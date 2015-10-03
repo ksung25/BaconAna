@@ -8,7 +8,6 @@
 #include "BaconAna/DataFormats/interface/TMuon.hh"
 #include "BaconAna/DataFormats/interface/TTau.hh"
 #include "BaconAna/DataFormats/interface/TAddJet.hh"
-#include "BaconAna/DataFormats/interface/TTopJet.hh"
 #include "BaconAna/DataFormats/interface/TJet.hh"
 #include "BaconAna/DataFormats/interface/TPhoton.hh"
 #include "BaconAna/DataFormats/interface/TVertex.hh"
@@ -33,7 +32,6 @@
 #pragma link C++ class baconhep::TTau+;
 #pragma link C++ class baconhep::TJet+;
 #pragma link C++ class baconhep::TAddJet+;
-#pragma link C++ class baconhep::TTopJet+;
 #pragma link C++ class baconhep::TPhoton+;
 #pragma link C++ class baconhep::TVertex+;
 #pragma link C++ class baconhep::TPFPart+;
