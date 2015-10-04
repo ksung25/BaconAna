@@ -16,15 +16,23 @@ namespace baconhep
       nPUmean(0), nPUmeanm(0), nPUmeanp(0),
       pvx(0), pvy(0), pvz(0),
       bsx(0), bsy(0), bsz(0), 
-      pfMET(0), pfMETphi(0), pfMETCov00(0), pfMETCov01(0), pfMETCov11(0),
+      caloMET(0), caloMETphi(0),  caloMETCov00(0),  caloMETCov01(0),  caloMETCov11(0),
+      pfMET(0),  pfMETphi(0),  pfMETCov00(0),  pfMETCov01(0),  pfMETCov11(0),
       pfMETC(0), pfMETCphi(0), pfMETCCov00(0), pfMETCCov01(0), pfMETCCov11(0),
       mvaMET(0), mvaMETphi(0), mvaMETCov00(0), mvaMETCov01(0), mvaMETCov11(0),
-      mvaMETU(0), mvaMETUphi(0), mvaMETUCov00(0), mvaMETUCov01(0), mvaMETUCov11(0),
-      mvaMET0(0), mvaMET0phi(0), mvaMET0Cov00(0), mvaMET0Cov01(0), mvaMET0Cov11(0),
+      puppET (0), puppETphi (0), puppETCov00 (0), puppETCov01 (0), puppETCov11 (0),
+      puppETC(0), puppETCphi(0), puppETCCov00(0), puppETCCov01(0), puppETCCov11(0),
+      pfMET30(0),   pfMET30phi(0),   //pfMETCov00(0),   pfMETCov01(0),   pfMETCov11(0),
+      pfMETC30(0),  pfMETC30phi(0),  //pfMETCCov00(0),  pfMETCCov01(0),  pfMETCCov11(0),
+      mvaMET30(0),  mvaMET30phi(0),  //mvaMETCov00(0),  mvaMETCov01(0),  mvaMETCov11(0),
+      puppET30 (0), puppET30phi (0), //puppETCov00 (0), puppETCov01 (0), puppETCov11 (0),
+      puppETC30(0), puppETC30phi(0), //puppETCCov00(0), puppETCCov01(0), puppETCCov11(0),
+      alpacaMET(0), alpacaMETphi(0), //puppETCCov00(0), puppETCCov01(0), puppETCCov11(0),
+      pcpMET   (0), pcpMETphi(0),    //puppETCCov00(0), puppETCCov01(0), puppETCCov11(0),
       trkMET(0), trkMETphi(0),
       rhoIso(0), rhoJet(0),
       triggerBits(0),
-      hasGoodPV(false)             
+      hasGoodPV(false)
       {}
       ~TEventInfo(){}
 
@@ -34,22 +42,31 @@ namespace baconhep
       float         nPUmean, nPUmeanm, nPUmeanp;               // expected number of reconstructed pile-up vertices
       float         pvx, pvy, pvz;                             // best primary vertex
       float         bsx, bsy, bsz;                             // beamspot
-      float         pfMET, pfMETphi;                           // particle flow MET
+      float         caloMET, caloMETphi;                       // calo MET
+      float         caloMETCov00, caloMETCov01, caloMETCov11;
+      float         pfMET,   pfMETphi;                           // particle flow MET
       float         pfMETCov00, pfMETCov01, pfMETCov11;
-      float         pfMETC, pfMETCphi;                         // corrected particle flow MET
+      float         pfMETC,   pfMETCphi;                         // corrected particle flow MET
       float         pfMETCCov00, pfMETCCov01, pfMETCCov11;
-      float         mvaMET, mvaMETphi;                         // MVA MET
+      float         mvaMET,   mvaMETphi;                         // MVA MET
       float         mvaMETCov00, mvaMETCov01, mvaMETCov11;
-      float         mvaMETU, mvaMETUphi;
-      float         mvaMETUCov00, mvaMETUCov01, mvaMETUCov11;
-      float         mvaMET0, mvaMET0phi;
-      float         mvaMET0Cov00, mvaMET0Cov01, mvaMET0Cov11;
+      float         puppET,   puppETphi;                         // PUPPI MET
+      float         puppETCov00, puppETCov01, puppETCov11;
+      float         puppETC,   puppETCphi;                       // Type1 PUPPI MET
+      float         puppETCCov00, puppETCCov01, puppETCCov11;
+      float         pfMET30, pfMET30phi;                         // particle flow MET
+      float         pfMETC30, pfMETC30phi;                       // corrected particle flow MET
+      float         mvaMET30, mvaMET30phi;                       // MVA MET
+      float         puppET30, puppET30phi;                       // PUPPI MET
+      float         puppETC30, puppETC30phi;                     // Type1 PUPPI MET
+      float         alpacaMET, alpacaMETphi;                     // Alpaca MET
+      float         pcpMET, pcpMETphi;                           // Alapaca + PUPPI MET
       float         trkMET, trkMETphi;                         // track MET
       float         rhoIso, rhoJet;                            // event energy density
       TriggerBits   triggerBits;                               // fired trigger bits
       bool          hasGoodPV;                                 // event has a good PV?
 
-    ClassDef(TEventInfo,3)
+    ClassDef(TEventInfo,5)
   };
 }
 #endif

@@ -1,7 +1,7 @@
 #ifndef BACONANA_DATAFORMATS_LINKDEF_H
 #define BACONANA_DATAFORMATS_LINKDEF_H
 #include "BaconAna/DataFormats/interface/TEventInfo.hh"
-#include "BaconAna/DataFormats/interface/TSusyGen.hh"
+#include "BaconAna/DataFormats/interface/TLHEWeight.hh"
 #include "BaconAna/DataFormats/interface/TGenEventInfo.hh"
 #include "BaconAna/DataFormats/interface/TGenParticle.hh"
 #include "BaconAna/DataFormats/interface/TElectron.hh"
@@ -9,6 +9,7 @@
 #include "BaconAna/DataFormats/interface/TTau.hh"
 #include "BaconAna/DataFormats/interface/TAddJet.hh"
 #include "BaconAna/DataFormats/interface/TJet.hh"
+#include "BaconAna/DataFormats/interface/TCaloJet.hh"
 #include "BaconAna/DataFormats/interface/TPhoton.hh"
 #include "BaconAna/DataFormats/interface/TVertex.hh"
 #include "BaconAna/DataFormats/interface/TPFPart.hh"
@@ -24,12 +25,13 @@
 #pragma link C++ namespace baconhep;
 
 #pragma link C++ class baconhep::TEventInfo+;
-#pragma link C++ class baconhep::TSusyGen+;
+#pragma link C++ class baconhep::TLHEWeight+;
 #pragma link C++ class baconhep::TGenEventInfo+;
 #pragma link C++ class baconhep::TGenParticle+;
 #pragma link C++ class baconhep::TElectron+;
 #pragma link C++ class baconhep::TMuon+;
 #pragma link C++ class baconhep::TTau+;
+#pragma link C++ class baconhep::TCaloJet+;
 #pragma link C++ class baconhep::TJet+;
 #pragma link C++ class baconhep::TAddJet+;
 #pragma link C++ class baconhep::TPhoton+;

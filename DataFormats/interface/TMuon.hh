@@ -10,18 +10,20 @@ namespace baconhep
   {
     public:
       TMuon():
-      pt(0), eta(0), phi(0), ptErr(0), ptHZZ4l(0),
+      pt(0), eta(0), phi(0), ptErr(0),
       staPt(0), staEta(0), staPhi(0),
       pfPt(0), pfEta(0), pfPhi(0),
-      trkIso03(-1), ecalIso03(-1), hcalIso03(-1),
-      chHadIso03(-1), gammaIso03(-1), neuHadIso03(-1), puIso03(-1),
-      chHadIso04(-1), gammaIso04(-1), neuHadIso04(-1), puIso04(-1),
+      trkIso(-1), ecalIso(-1), hcalIso(-1),
+      chHadIso(-1), gammaIso(-1), neuHadIso(-1), puIso(-1),
+      puppiChHadIso(-1), puppiGammaIso(-1), puppiNeuHadIso(-1), 
+      puppiChHadIsoNoLep(-1), puppiGammaIsoNoLep(-1), puppiNeuHadIsoNoLep(-1), 
       d0(-999.), dz(-999.), sip3d(-999.),
       tkNchi2(-999.), muNchi2(-999.),
       trkKink(0), glbKink(0),
+      trkHitFrac(0), chi2LocPos(-999.), segComp(-999.), caloComp(-999.),
       q(0),
       nValidHits(0),
-      typeBits(0), selectorBits(0),
+      typeBits(0), selectorBits(0), pogIDBits(0),
       nTkHits(0), nPixHits(0),
       nTkLayers(0), nPixLayers(0),
       nMatchStn(0),
@@ -30,31 +32,37 @@ namespace baconhep
       {}
       ~TMuon(){}
     
-      float         pt, eta, phi, ptErr;                           // kinematics
-      float         ptHZZ4l;                                       // HZZ4l lepton corrections
-      float         staPt, staEta, staPhi;                         // STA track kinematics
-      float         pfPt, pfEta, pfPhi;                            // matched PFCandidate
-      float         trkIso03, ecalIso03, hcalIso03;                // detector isolation
-      float         chHadIso03, gammaIso03, neuHadIso03, puIso03;  // PF isolation variables
-      float         chHadIso04, gammaIso04, neuHadIso04, puIso04;
-      float         d0, dz, sip3d;                                 // impact parameter
-      float         tkNchi2, muNchi2;                              // track fit normalized chi-square
-      float         trkKink, glbKink;                              // track kink
-      int           q;                                             // charge
-      int           nValidHits;                                    // number of valid muon hits in global fit
-      unsigned int  typeBits;                                      // muon type bits
-      unsigned int  selectorBits;                                  // MuonSelector bits
-      unsigned int  nTkHits, nPixHits;                             // number of hits in tracker
-      unsigned int  nTkLayers, nPixLayers;                         // number of hit layers in tracker
-      unsigned int  nMatchStn;                                     // number of stations with muon segments
-      int           trkID;                                         // tracker track ID (unique per event)
-      TriggerObjects hltMatchBits;                                  // HLT matching
+      float          pt, eta, phi, ptErr;                   // kinematics
+      float          staPt, staEta, staPhi;                 // STA track kinematics
+      float          pfPt, pfEta, pfPhi;                    // matched PFCandidate
+      float          trkIso, ecalIso, hcalIso;              // detector isolation (R=0.3)
+      float          chHadIso, gammaIso, neuHadIso, puIso;  // PF isolation variables (R=0.4)
+      float          puppiChHadIso,      puppiGammaIso,      puppiNeuHadIso;  // Puppi Isolation R=0.4
+      float          puppiChHadIsoNoLep, puppiGammaIsoNoLep, puppiNeuHadIsoNoLep; // Puppi Isolation R=0.4 no lep
+      float          d0, dz, sip3d;                         // impact parameter
+      float          tkNchi2, muNchi2;                      // track fit normalized chi-square
+      float          trkKink, glbKink;                      // track kink
+      float          trkHitFrac;                            // fraction of valid tracker hits
+      float          chi2LocPos;                            // TRK-STA position match
+      float          segComp;                               // compatibility of tracker track with muon segment
+      float          caloComp;                              // muon hypothesis compatibility with calo energy
+      int            q;                                     // charge
+      int            nValidHits;                            // number of valid muon hits in global fit
+      unsigned int   typeBits;                              // muon type bits
+      unsigned int   selectorBits;                          // MuonSelector bits
+      unsigned int   pogIDBits;                             // POG muon IDs from CMSSW
+      unsigned int   nTkHits, nPixHits;                     // number of hits in tracker
+      unsigned int   nTkLayers, nPixLayers;                 // number of hit layers in tracker
+      unsigned int   nMatchStn;                             // number of stations with muon segments
+      int            trkID;                                 // tracker track ID (unique per event)
+      TriggerObjects hltMatchBits;                          // HLT matching
           
-    ClassDef(TMuon,1)
+    ClassDef(TMuon,3)
   };
 
   enum EMuType
   {
+    // following convention in DataFormats/MuonReco/interface/Muon.h
     kGlobal     = 2,
     kTracker    = 4,
     kStandalone = 8,
@@ -98,6 +106,16 @@ namespace baconhep
     kTMLastStationOptimizedBarrelLowPtLoose = 0x0400000,  // combination of TMLastStation and TMOneStation but with low pT optimization in barrel only
     kTMLastStationOptimizedBarrelLowPtTight = 0x0800000,  // combination of TMLastStation and TMOneStation but with low pT optimization in barrel only
     kRPCMuLoose                             = 0x1000000   // checks isRPCMuon flag (require two well matched hits in different RPC layers)
+  };
+
+  enum EPOGIDBit
+  {
+    // Muon POG selection ID
+    kPOGLooseMuon  =  1,
+    kPOGMediumMuon =  2,
+    kPOGTightMuon  =  4,
+    kPOGSoftMuon   =  8,
+    kPOGHighPtMuon = 16
   };
 }
 #endif
