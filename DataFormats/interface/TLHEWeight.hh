@@ -9,13 +9,13 @@ namespace baconhep
   class TLHEWeight : public TObject
   {
     public:
-      TLHEWeight():id(""),weight(0){}
+      TLHEWeight():id(0),weight(0){}
       ~TLHEWeight(){}
 
-      std::string id;       // parton flavor PDG ID
-      float       weight;   // generator-level event weight
+    int id;       // parton flavor PDG ID
+    float       weight;   // generator-level event weight
 
-    ClassDef(TLHEWeight,1)
+    ClassDef(TLHEWeight,2)
   };
 }
 #endif
