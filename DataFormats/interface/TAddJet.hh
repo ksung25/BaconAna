@@ -11,8 +11,8 @@ namespace baconhep
       TAddJet():
       index(-1),
       mass_prun(0), mass_trim(0), mass_sd0(0),
-      //c2_0(0), c2_0P2(0), c2_0P5(0), c2_1P0(0), c2_2P0(0),
-      //qjet(0),
+      c2_0(0), c2_0P2(0), c2_0P5(0), c2_1P0(0), c2_2P0(0),
+      qjet(0),
       tau1(-1), tau2(-1), tau3(-1), tau4(-1),
       sj1_pt(0), sj1_eta(0), sj1_phi(0), sj1_m(0), sj1_csv(-2), sj1_qgid(-2), sj1_q(-100),
       sj2_pt(0), sj2_eta(0), sj2_phi(0), sj2_m(0), sj2_csv(-2), sj2_qgid(-2), sj2_q(-100),
@@ -25,8 +25,8 @@ namespace baconhep
       
       unsigned int index;                                                   // index in original jet collection
       float mass_prun, mass_trim, mass_sd0;                                 // groomed jet masses
-      //float c2_0, c2_0P2, c2_0P5, c2_1P0, c2_2P0;                           // Correlation function with various exponents
-      //float qjet;                                                           // Q-jet volatility
+      float c2_0, c2_0P2, c2_0P5, c2_1P0, c2_2P0;                           // Correlation function with various exponents
+      float qjet;                                                           // Q-jet volatility
       float tau1, tau2, tau3, tau4;                                         // N-subjettiness
       
       // subjets from trimming (ordered by pT)

@@ -31,7 +31,7 @@ enum EMETFilterFailBit
   kTrkPOGFilter_logErrorTooManyClusters = 512
 };
 
-const unsigned int kNTrigBit = 128;
+const unsigned int kNTrigBit = 256;
 typedef std::bitset<kNTrigBit> TriggerBits;
 const unsigned int kNTrigObjectBit = 256;
 typedef std::bitset<kNTrigObjectBit> TriggerObjects;
