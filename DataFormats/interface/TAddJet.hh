@@ -13,7 +13,7 @@ namespace baconhep
       mass_prun(0), mass_trim(0), mass_sd0(0),
       c2_0(0), c2_0P2(0), c2_0P5(0), c2_1P0(0), c2_2P0(0),
       qjet(0),
-      tau1(-1), tau2(-1), tau3(-1), tau4(-1),
+      tau1(-1), tau2(-1), tau3(-1), tau4(-1),doublecsv(0),
       sj1_pt(0), sj1_eta(0), sj1_phi(0), sj1_m(0), sj1_csv(-2), sj1_qgid(-2), sj1_q(-100),
       sj2_pt(0), sj2_eta(0), sj2_phi(0), sj2_m(0), sj2_csv(-2), sj2_qgid(-2), sj2_q(-100),
       sj3_pt(0), sj3_eta(0), sj3_phi(0), sj3_m(0), sj3_csv(-2), sj3_qgid(-2), sj3_q(-100),
@@ -28,6 +28,7 @@ namespace baconhep
       float c2_0, c2_0P2, c2_0P5, c2_1P0, c2_2P0;                           // Correlation function with various exponents
       float qjet;                                                           // Q-jet volatility
       float tau1, tau2, tau3, tau4;                                         // N-subjettiness
+      float doublecsv;                                                      // Double b-tag 
       
       // subjets from trimming (ordered by pT)
       float sj1_pt, sj1_eta, sj1_phi, sj1_m, sj1_csv, sj1_qgid, sj1_q;
@@ -41,7 +42,7 @@ namespace baconhep
       unsigned int top_n_subjets;
       float        top_m_min, top_m_123, top_fRec;
 
-    ClassDef(TAddJet,8)
+    ClassDef(TAddJet,9)
   };
   
   enum ETopTagType
