@@ -19,7 +19,7 @@ namespace baconhep
       sj3_pt(0), sj3_eta(0), sj3_phi(0), sj3_m(0), sj3_csv(-2), sj3_qgid(-2), sj3_q(-100),
       sj4_pt(0), sj4_eta(0), sj4_phi(0), sj4_m(0), sj4_csv(-2), sj4_qgid(-2), sj4_q(-100),
       pullAngle(0),
-      topTagType(0), top_n_subjets(0), top_m_min(0), top_m_123(0), top_fRec(0)
+      topTagType(0), top_n_subjets(0), top_m_min(0), top_m_123(0), top_fRec(0),topchi2(0)
       {}
       ~TAddJet(){}
       
@@ -41,8 +41,8 @@ namespace baconhep
       unsigned int topTagType;
       unsigned int top_n_subjets;
       float        top_m_min, top_m_123, top_fRec;
-
-    ClassDef(TAddJet,9)
+      float        topchi2;
+    ClassDef(TAddJet,10)
   };
   
   enum ETopTagType
