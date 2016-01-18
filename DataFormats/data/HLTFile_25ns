@@ -15,6 +15,7 @@ HLT_Ele22_eta2p1_WP75_Gsf_LooseIsoPFTau20_v*                              hltEle
 HLT_Ele22_eta2p1_WP75_Gsf_LooseIsoPFTau20_v*                              hltPFTau20TrackLooseIso                                                           2
 HLT_Ele22_eta2p1_WPLoose_Gsf_LooseIsoPFTau20_v*                           hltEle22WPLooseL1IsoEG20erTau20erGsfTrackIsoFilter                                1
 HLT_Ele22_eta2p1_WPLoose_Gsf_LooseIsoPFTau20_v*                           hltPFTau20TrackLooseIso                                                           2
+HLT_Ele23_WPLoose_Gsf_v*                                                  hltEle23WPLooseGsfTrackIsoFilter                                                  1
 HLT_Ele23_WPLoose_Gsf_CentralPFJet30_BTagCSV07_v*                         hltEle23WPLooseGsfTrackIsoFilter                                                  1
 HLT_Ele23_WPLoose_Gsf_CentralPFJet30_BTagCSV07_v*                         hltJetFilterSingleTopEle23                                                        2
 HLT_Ele23_WPLoose_Gsf_TriCentralPFJet50_40_30_v*                          hltEle23WPLooseGsfTrackIsoFilter                                                  1
@@ -158,7 +159,15 @@ HLT_DoubleEle24_22_eta2p1_WP75_Gsf_v*                                     hltEle
 HLT_DoubleEle24_22_eta2p1_WPLoose_Gsf_v*                                  hltEle24Ele22WPLooseGsfleg1TrackIsoFilter                                         1
 HLT_DoubleEle24_22_eta2p1_WPLoose_Gsf_v*                                  hltEle24Ele22WPLooseGsfleg2TrackIsoFilter                                         2
 HLT_Ele12_CaloIdL_TrackIdL_IsoVL_v*                                       hltEle12CaloIdLTrackIdLIsoVLTrackIsoFilter                                        1
+HLT_Ele12_CaloIdL_TrackIdL_IsoVL_PFJet30_v*                               hltEle12CaloIdLTrackIdLIsoVLTrackIsoFilter                                        1
+HLT_Ele12_CaloIdL_TrackIdL_IsoVL_PFJet30_v*                               hltEle12PFJet30EleCleaned                                                         2
+HLT_Ele18_CaloIdL_TrackIdL_IsoVL_PFJet30_v*                               hltEle18CaloIdLTrackIdLIsoVLTrackIsoFilter                                        1
+HLT_Ele18_CaloIdL_TrackIdL_IsoVL_PFJet30_v*                               hltEle18PFJet30EleCleaned                                                         2
 HLT_Ele23_CaloIdL_TrackIdL_IsoVL_v*                                       hltEle23CaloIdLTrackIdLIsoVLTrackIsoFilter                                        1
+HLT_Ele23_CaloIdL_TrackIdL_IsoVL_PFJet30_v*                               hltEle23CaloIdLTrackIdLIsoVLTrackIsoFilter                                        1
+HLT_Ele23_CaloIdL_TrackIdL_IsoVL_PFJet30_v*                               hltEle23PFJet30EleCleaned                                                         2
+HLT_Ele33_CaloIdL_TrackIdL_IsoVL_PFJet30_v*                               hltEle33CaloIdLTrackIdLIsoVLTrackIsoFilter                                        1
+HLT_Ele33_CaloIdL_TrackIdL_IsoVL_PFJet30_v*                               hltEle33PFJet30EleCleaned                                                         2
 HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg_v*                             hltDoublePFTau35TrackPt1MediumIsolationL1HLTMatchedReg                            1
 HLT_DoubleMediumIsoPFTau40_Trk1_eta2p1_Reg_v*                             hltDoublePFTau40TrackPt1MediumIsolationL1HLTMatchedReg                            1
 HLT_PFMETNoMu90_NoiseCleaned_PFMHTNoMu90_IDTight_v*                       hltPFMETNoMu90                                                                    1
