@@ -15,6 +15,7 @@ namespace baconhep
       pfPt(0), pfEta(0), pfPhi(0),
       trkIso(-1), ecalIso(-1), hcalIso(-1), hcalDepth1Iso(-1),
       chHadIso(-1), gammaIso(-1), neuHadIso(-1), puIso(-1),
+      ecalPFClusIso(-1), hcalPFClusIso(-1),
       puppiChHadIso(-1), puppiGammaIso(-1), puppiNeuHadIso(-1), 
       puppiChHadIsoNoLep(-1), puppiGammaIsoNoLep(-1), puppiNeuHadIsoNoLep(-1), 
       d0(-999.), dz(-999.), sip3d(-999.),
@@ -36,6 +37,7 @@ namespace baconhep
       float          pfPt, pfEta, pfPhi;                       // matching PF-candidate kinematics
       float          trkIso, ecalIso, hcalIso, hcalDepth1Iso;  // detector isolation
       float          chHadIso, gammaIso, neuHadIso, puIso;     // PF isolation variables
+      float          ecalPFClusIso, hcalPFClusIso;             // PF cluster isolation variables
       float          puppiChHadIso,      puppiGammaIso,      puppiNeuHadIso;  // Puppi Isolation R=0.4
       float          puppiChHadIsoNoLep, puppiGammaIsoNoLep, puppiNeuHadIsoNoLep; // Puppi Isolation R=0.4 no lep
       float          d0, dz, sip3d;                            // impact parameter
