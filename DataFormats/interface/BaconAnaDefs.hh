@@ -28,7 +28,11 @@ enum EMETFilterFailBit
   kECALLaserCorrFilter                  = 64,
   kTrkPOGFilter_manystripclus53X        = 128,
   kTrkPOGFilter_toomanystripclus53X     = 256,
-  kTrkPOGFilter_logErrorTooManyClusters = 512
+  kTrkPOGFilter_logErrorTooManyClusters = 512,
+  kHBHENoiseIsoFilter                   = 1024,
+  kGoodVerticesFilter                   = 2048,
+  kChargedHadronTrackResolutionFilter   = 4096,
+  kMuonBadTrackFilter                   = 8192
 };
 
 const unsigned int kNTrigBit = 256;
