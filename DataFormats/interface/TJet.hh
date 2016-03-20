@@ -28,7 +28,7 @@ namespace baconhep
       float          pt, eta, phi, mass, ptRaw, unc;                          // kinematics
       float          area;                                                    // jet area (from FastJet)
       float          d0, dz;                                                  // impact parameter of leading charged constituent
-      float          csv;                                                     // CSV b-tagger for the jet and subjets
+      float          csv,bmva,cvb,cvl;                                        // CSV b-taggers/c-tagger for the jet
       float          qgid, axis2, ptD;                                        // q/g discriminator and input variables
       int            mult;
       float          q;                                                       // Charge for jet and subjets
@@ -42,7 +42,7 @@ namespace baconhep
       unsigned int   nCharged, nNeutrals, nParticles;                         // constituent multiplicity
       TriggerObjects hltMatchBits;                                            // HLT matching
           
-    ClassDef(TJet,5)
+    ClassDef(TJet,6)
   };
 }
 #endif
