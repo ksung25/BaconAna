@@ -225,3 +225,31 @@ HLT_Photon175_v*                                                          hltEG1
 HLT_Photon165_HE10_v*                                                     hltEG165HE10Filter                                                                1
 HLT_Photon250_NoHE_v*                                                     hltEG250erEtFilter                                                                1
 HLT_Photon300_NoHE_v*                                                     hltEG300erEtFilter                                                                1
+HLT_AK8PFHT650_TrimR0p1PT0p03Mass50_v*                                    hlt1AK8PFJetsTrimR0p1PT0p03Mass50                                                 1
+HLT_AK8PFHT650_TrimR0p1PT0p03Mass50_BTagCSV0p45_v*                        hlt1AK8PFJetsTrimR0p1PT0p03Mass50                                                 1
+HLT_AK8DiPFJet250_200_TrimMass30_BTagCSV0p45_v*                           hltAK8PFJet200TrimModMass30                                                 	    1
+HLT_AK8DiPFJet250_200_TrimMass30_BTagCSV0p45_v2                           hltAK8PFJet200TrimModMass30                                                 	    1
+HLT_RsqMR240_Rsq0p09_MR200_v*						  hltRsqMR240Rsq0p09MR200							    1
+HLT_RsqMR240_Rsq0p09_MR200_4jet_v*					  hltRsqMR240Rsq0p09MR200							    1
+HLT_RsqMR270_Rsq0p09_MR200_v*						  hltRsqMR270Rsq0p09MR200							    1
+HLT_RsqMR270_Rsq0p09_MR200_4jet_v*					  hltRsqMR270Rsq0p09MR200							    1
+HLT_RsqMR260_Rsq0p09_MR200_v*						  hltRsqMR260Rsq0p09MR200							    1
+HLT_RsqMR260_Rsq0p09_MR200_4jet_v*					  hltRsqMR260Rsq0p09MR200							    1
+HLT_RsqMR300_Rsq0p09_MR200_v*						  hltRsqMR300Rsq0p09MR200							    1
+HLT_RsqMR300_Rsq0p09_MR200_4jet_v*					  hltRsqMR300Rsq0p09MR200							    1
+HLT_Rsq0p25_v*								  hltRsq0p25									    1
+HLT_Rsq0p30_v*								  hltRsq0p30									    1
+HLT_Rsq0p36_v*								  hltRsq0p36									    1
+HLT_Rsq0p02_MR300_TriPFJet80_60_40_BTagCSV_p063_p20_Mbb60_200_v*	  hltPFJetCSV0p70p4Mbb60200Ptb5030						    1
+HLT_Rsq0p02_MR300_TriPFJet80_60_40_DoubleBTagCSV_p063_Mbb60_200_v*	  hltPFJetCSV0p7Mbb60200Ptb5030							    1
+HLT_DiPFJetAve40_v*							  hltAK4PFJetsTightIDCorrected							    1
+HLT_DiPFJetAve60_v*							  hltAK4PFJetsTightIDCorrected							    1
+HLT_DiPFJetAve80_v*							  hltAK4PFJetsTightIDCorrected							    1
+HLT_DiPFJetAve140_v*							  hltAK4PFJetsTightIDCorrected							    1
+HLT_DiPFJetAve200_v*							  hltAK4PFJetsTightIDCorrected							    1
+HLT_DiPFJetAve260_v*							  hltAK4PFJetsTightIDCorrected							    1
+HLT_DiPFJetAve320_v*							  hltAK4PFJetsTightIDCorrected							    1
+HLT_DiPFJetAve400_v*							  hltAK4PFJetsTightIDCorrected							    1
+HLT_DiPFJetAve500_v*							  hltAK4PFJetsTightIDCorrected							    1
+
+
