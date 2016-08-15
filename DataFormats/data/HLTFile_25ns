@@ -251,5 +251,16 @@ HLT_DiPFJetAve260_v*							  hltAK4PFJetsTightIDCorrected							    1
 HLT_DiPFJetAve320_v*							  hltAK4PFJetsTightIDCorrected							    1
 HLT_DiPFJetAve400_v*							  hltAK4PFJetsTightIDCorrected							    1
 HLT_DiPFJetAve500_v*							  hltAK4PFJetsTightIDCorrected							    1
-
-
+HLT_PFMETNoMu100_NoiseCleaned_PFMHTNoMu100_IDTight_v*                     hltPFMETNoMu100                                                                   1
+HLT_PFMETNoMu100_JetIdCleaned_PFMHTNoMu100_IDTight_v*                     hltPFMETNoMu100                                                                   1
+HLT_PFMETNoMu100_NoiseCleaned_PFMHTNoMu100_NoID_v*                        hltPFMETNoMu100                                                                   1
+HLT_PFMETNoMu110_NoiseCleaned_PFMHTNoMu110_IDTight_v*                     hltPFMETNoMu110                                                                   1
+HLT_PFMETNoMu110_JetIdCleaned_PFMHTNoMu110_IDTight_v*                     hltPFMETNoMu110                                                                   1
+HLT_PFMETNoMu110_NoiseCleaned_PFMHTNoMu110_NoID_v*                        hltPFMETNoMu110                                                                   1
+HLT_Ele25_eta2p1_WPTight_Gsf_v*                                           hltEle25WPTightGsfTrackIsoFilter                                                  1
+HLT_ECALHT800_v*							  hltHtEcal800                                                  		    1
+HLT_ECANHT800_v*							  hltHtEcal800                                                  		    1
+HLT_Ele35_WPLoose_Gsf_v*						  hltEle35WPLooseGsfTrackIsoFilter                                                  1
+HLT_Ele27_WPTight_Gsf_v*						  hltEle27erWPTightGsfTrackIsoFilter						    1
+HLT_Photon120_R9Id90_HE10_Iso40_EBOnly_PFMET40_v*			  hltEG120R9Id90HE10Iso40EBOnlyTrackIsoFilter					    1
+HLT_Photon135_PFMET100_v*						  hltEG135HEFilter								    1

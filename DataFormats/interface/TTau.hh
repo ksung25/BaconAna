@@ -14,7 +14,7 @@ namespace baconhep
       q(0),
       dzLeadChHad(-999.),
       nSignalChHad(0), nSignalGamma(0),
-      antiEleMVA5(0), antiEleMVA5Cat(0),
+      antiEleMVA6(0), antiEleMVA6Cat(0),
       rawMuonRejection(0),rawIso3Hits(0), 
       rawIsoMVA3oldDMwoLT(0), rawIsoMVA3oldDMwLT(0),
       rawIsoMVA3newDMwoLT(0), rawIsoMVA3newDMwLT(0),
@@ -30,8 +30,8 @@ namespace baconhep
     float          dzLeadChHad;          // longitudinal impact parameter of leading charged hadron
     unsigned int   nSignalChHad;         // number of charged hadrons in tau
     unsigned int   nSignalGamma;         // number of photons in tau     
-    float          antiEleMVA5;          // anti-electron MVA5 for Run 2
-    float          antiEleMVA5Cat;       // anti-electron MVA5 category for Run 2
+    float          antiEleMVA6;          // anti-electron MVA6 for Run 2
+    float          antiEleMVA6Cat;       // anti-electron MVA6 category for Run 2
     float          rawMuonRejection;     // raw MVA output of BDT based anti-muon discriminator
     float          rawIso3Hits;          // raw Iso 3 hits
     float          rawIsoMVA3oldDMwoLT;  // raw Iso MVA3, trained on prong 1 and 3, without lifetime info
@@ -51,11 +51,11 @@ namespace baconhep
     kByLooseElectronRejection                  = 1UL<<0,   // electron pion MVA discriminator < 0.6 
     kByMediumElectronRejection                 = 1UL<<1,   // electron pion MVA discriminator < -0.1 and not 1.4442 < |η| < 1.566
     kByTightElectronRejection                  = 1UL<<2,   // electron pion MVA discriminator < -0.1 and not 1.4442 < |η| < 1.566 and Brem pattern cuts see AN-10-387)
-    kByMVA5VLooseElectronRejection             = 1UL<<3,   // anti-electron MVA discriminator with new training
-    kByMVA5LooseElectronRejection              = 1UL<<4,
-    kByMVA5MediumElectronRejection             = 1UL<<5,
-    kByMVA5TightElectronRejection              = 1UL<<6,
-    kByMVA5VTightElectronRejection             = 1UL<<7,
+    kByMVA6VLooseElectronRejection             = 1UL<<3,   // anti-electron MVA discriminator with new training
+    kByMVA6LooseElectronRejection              = 1UL<<4,
+    kByMVA6MediumElectronRejection             = 1UL<<5,
+    kByMVA6TightElectronRejection              = 1UL<<6,
+    kByMVA6VTightElectronRejection             = 1UL<<7,
     kByLooseMuonRejection                      = 1UL<<8,   // Tau Lead Track not matched to chamber hits
     kByMediumMuonRejection                     = 1UL<<9,   // Tau Lead Track not matched to global/tracker muon
     kByTightMuonRejection                      = 1UL<<10,  // Tau Lead Track not matched to global/tracker muon and energy deposit in ECAL + HCAL exceeding 0.2 times Lead Track momentum

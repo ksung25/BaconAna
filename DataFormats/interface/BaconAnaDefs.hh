@@ -32,7 +32,9 @@ enum EMETFilterFailBit
   kHBHENoiseIsoFilter                   = 1024,
   kGoodVerticesFilter                   = 2048,
   kChargedHadronTrackResolutionFilter   = 4096,
-  kMuonBadTrackFilter                   = 8192
+  kMuonBadTrackFilter                   = 8192,
+  kGlobalSuperTightHalo2016Filter       = 16384,
+  kGlobalTightHalo2016Filter            = 32768
 };
 
 const unsigned int kNTrigBit = 256;
