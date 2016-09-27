@@ -12,7 +12,7 @@ namespace baconhep
     TTau():
       pt(0), eta(0), phi(0), m(0), e(0),
       q(0),
-      dzLeadChHad(-999.),
+      dzLeadChHad(-999.),d0LeadChHad(-999.),
       nSignalChHad(0), nSignalGamma(0),
       antiEleMVA6(0), antiEleMVA6Cat(0),
       rawMuonRejection(0),rawIso3Hits(0), 
@@ -28,6 +28,7 @@ namespace baconhep
     float          pt, eta, phi, m, e;   // kinematics
     int            q;                    // charge
     float          dzLeadChHad;          // longitudinal impact parameter of leading charged hadron
+    float          d0LeadChHad;          // transverse impact parameter of leading charged hadron
     unsigned int   nSignalChHad;         // number of charged hadrons in tau
     unsigned int   nSignalGamma;         // number of photons in tau     
     float          antiEleMVA6;          // anti-electron MVA6 for Run 2

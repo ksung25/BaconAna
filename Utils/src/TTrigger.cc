@@ -22,6 +22,7 @@ using namespace baconhep;
 // be associated with the same leg (e.g. the trailing electron in a dielectron trigger)
 //
 TTrigger::TTrigger(const std::string iFileName) { 
+  if(iFileName == "") return;
   std::ifstream lFile(iFileName.c_str());
   assert(lFile.is_open());
 
