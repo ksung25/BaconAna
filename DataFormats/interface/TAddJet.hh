@@ -37,7 +37,7 @@ namespace baconhep
       float qjet;                                                           // Q-jet volatility
       float tau1, tau2, tau3, tau4;                                         // N-subjettiness
       float doublecsv;                                                      // Double b-tag 
-      float Double_sub 							    // Double b-tag with subjet b-tagging as additional input 
+      float Double_sub; 							    // Double b-tag with subjet b-tagging as additional input 
       
       // subjets from trimming (ordered by pT)
       float sj1_pt, sj1_eta, sj1_phi, sj1_m, sj1_csv, sj1_qgid, sj1_q;
