@@ -24,8 +24,8 @@ namespace baconhep
       //mvaMET(0), mvaMETphi(0), mvaMETCov00(0), mvaMETCov01(0), mvaMETCov11(0),
       puppET (0), puppETphi (0), puppETCov00 (0), puppETCov01 (0), puppETCov11 (0),
       puppETC(0), puppETCphi(0), puppETCCov00(0), puppETCCov01(0), puppETCCov11(0),
-      puppETCjerup(0),puppETCjerdn(0),puppETCjenup(0),puppETCjendn(0),puppETCuncup(0),puppETCuncdn(0),puppETCjrsup(0),puppETCjrsdn(0),
-      puppETCphijerup(0),puppETCphijerdn(0),puppETCphijenup(0),puppETCphijendn(0),puppETCphiuncup(0),puppETCphiuncdn(0),puppETCphijrsup(0),puppETCphijrsdn(0),
+      //puppETCjerup(0),puppETCjerdn(0),puppETCjenup(0),puppETCjendn(0),puppETCuncup(0),puppETCuncdn(0),puppETCjrsup(0),puppETCjrsdn(0),
+      //puppETCphijerup(0),puppETCphijerdn(0),puppETCphijenup(0),puppETCphijendn(0),puppETCphiuncup(0),puppETCphiuncdn(0),puppETCphijrsup(0),puppETCphijrsdn(0),
       alpacaMET(0), alpacaMETphi(0), //puppETCCov00(0), puppETCCov01(0), puppETCCov11(0),
       pcpMET   (0), pcpMETphi(0),    //puppETCCov00(0), puppETCCov01(0), puppETCCov11(0),
       //trkMET(0), trkMETphi(0),
@@ -55,16 +55,16 @@ namespace baconhep
       float         puppETCov00, puppETCov01, puppETCov11;
       float         puppETC,   puppETCphi;                       // Type1 PUPPI MET
       float         puppETCCov00, puppETCCov01, puppETCCov11;
-      float         puppETCjerup,puppETCjerdn,puppETCjenup,puppETCjendn,puppETCuncup,puppETCuncdn,puppETCjrsup,puppETCjrsdn;
-      float         puppETCphijerup,puppETCphijerdn,puppETCphijenup,puppETCphijendn,puppETCphiuncup,puppETCphiuncdn,puppETCphijrsup,puppETCphijrsdn;
+      //float         puppETCjerup,puppETCjerdn,puppETCjenup,puppETCjendn,puppETCuncup,puppETCuncdn,puppETCjrsup,puppETCjrsdn;
+      //float         puppETCphijerup,puppETCphijerdn,puppETCphijenup,puppETCphijendn,puppETCphiuncup,puppETCphiuncdn,puppETCphijrsup,puppETCphijrsdn;
       float         alpacaMET, alpacaMETphi;                     // Alpaca MET
       float         pcpMET, pcpMETphi;                           // Alapaca + PUPPI MET
-      //float         trkMET, trkMETphi;                         // track MET
+      float         trkMET, trkMETphi;                         // track MET
       float         rhoIso, rhoJet;                            // event energy density
       TriggerBits   triggerBits;                               // fired trigger bits
       bool          hasGoodPV;                                 // event has a good PV?
 
-    ClassDef(TEventInfo,7)
+    ClassDef(TEventInfo,8)
   };
 }
 #endif
