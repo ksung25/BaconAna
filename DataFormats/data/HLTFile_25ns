@@ -22,7 +22,6 @@ HLT_Ele32_eta2p1_WPLoose_Gsf_v*                                           hltEle
 HLT_Ele32_eta2p1_WPTight_Gsf_v*                                           hltEle32WPTightGsfTrackIsoFilter                                                  1
 HLT_Ele35_WPLoose_Gsf_v*                                                  hltEle35WPLooseGsfTrackIsoFilter                                                  1
 HLT_Ele45_WPLoose_v*                                                      hltEle45WPLooseGsfTrackIsoFilter                                                  1
-HLT_Ele105_CaloIdVT_GsfTrkIdT_v*					  hltEle105CaloIdVTGsfTrkIdTGsfDphiFilter					    1
 HLT_Ele20_eta2p1_WPLoose_Gsf_LooseIsoPFTau28_v*                           hltEle20WPLooseL1IsoEG18erIsoTau24erGsfTrackIsoFilter                             1
 HLT_Ele20_eta2p1_WPLoose_Gsf_LooseIsoPFTau28_v*                           hltPFTau28TrackLooseIso                                                           2
 HLT_Ele22_eta2p1_WPLoose_Gsf_LooseIsoPFTau20_SingleL1_v*                  hltEle22WPLooseL1SingleIsoEG20erGsfTrackIsoFilter                                 1
@@ -57,7 +56,6 @@ HLT_IsoTkMu27_v*                                                          hltL3f
 HLT_IsoMu27_v*                                                            hltL3crIsoL1sMu22Or25L1f0L2f10QL3f27QL3trkIsoFiltered0p09                         1
 HLT_Mu50_v*                                                               hltL3fL1sMu22Or25L1f0L2f10QL3Filtered50Q                                          1
 HLT_Mu45_eta2p1_v*                                                        hltL3fL1sMu22Or25L1f0L2f10QL3Filtered45e2p1Q                                      1
-HLT_TkMu50_v*								  hltL3fL1sMu25f0TkFiltered50Q							    1
 HLT_IsoMu17_eta2p1_LooseIsoPFTau20_v*                                     hltL3crIsoL1sMu16erTauJet20erL1f0L2f10QL3f17QL3trkIsoFiltered0p09                 1
 HLT_IsoMu17_eta2p1_LooseIsoPFTau20_v*                                     hltPFTau20TrackLooseIsoAgainstMuon                                                2
 HLT_IsoMu17_eta2p1_LooseIsoPFTau20_SingleL1_v*                            hltL3crIsoL1sSingleMu16erL1f0L2f10QL3f17QL3trkIsoFiltered0p09                     1
@@ -161,8 +159,6 @@ HLT_PFHT650_4JetPt50_v*                                                   hltPF4
 HLT_PFHT750_4JetPt50_v*                                                   hltPF4JetPt50HT750                                                                1
 HLT_PFHT800_4JetPt50_v*                                                   hltPF4JetPt50HT800                                                                1
 HLT_PFHT850_4JetPt50_v*                                                   hltPF4JetPt50HT850                                                                1
-HLT_PFHT650_WideJetMJJ900DEtaJJ1p5_v*					  hltFatDiPFJetMass900DR1p1Deta1p5						    1
-HLT_PFHT650_WideJetMJJ950DEtaJJ1p5_v*					  hltFatDiPFJetMass950DR1p1Deta1p5						    1
 HLT_Photon22_v*                                                           hltEG22HEFilter                                                                   1
 HLT_Photon30_v*                                                           hltEG30HEFilter                                                                   1
 HLT_Photon36_v*                                                           hltEG36HEFilter                                                                   1
@@ -183,8 +179,6 @@ HLT_AK8PFHT650_TrimR0p1PT0p03Mass50_v*                                    hlt1AK
 HLT_AK8PFHT600_TrimR0p1PT0p03Mass50_BTagCSV_p20_v*                        hlt1AK8PFJetsTrimR0p1PT0p03Mass50                                                 1
 HLT_AK8DiPFJet250_200_TrimMass30_v*                                       hltAK8PFJet200TrimModMass30                                                       1
 HLT_AK8DiPFJet250_200_TrimMass30_BTagCSV_p20_v*                           hltAK8PFJet200TrimModMass30                                                       1
-HLT_AK8DiPFJet280_200_TrimMass30_v*                                       hltAK8PFJet200TrimModMass30                                                       1
-HLT_AK8DiPFJet280_200_TrimMass30_BTagCSV_p20_v*                           hltAK8PFJet200TrimModMass30                                                       1
 HLT_RsqMR240_Rsq0p09_MR200_v*						  hltRsqMR240Rsq0p09MR200							    1
 HLT_RsqMR240_Rsq0p09_MR200_4jet_v*					  hltRsqMR240Rsq0p09MR200							    1
 HLT_RsqMR270_Rsq0p09_MR200_v*						  hltRsqMR270Rsq0p09MR200							    1
@@ -202,6 +196,12 @@ HLT_DiPFJetAve260_v*							  hltAK4PFJetsTightIDCorrected							    1
 HLT_DiPFJetAve320_v*							  hltAK4PFJetsTightIDCorrected							    1
 HLT_DiPFJetAve400_v*							  hltAK4PFJetsTightIDCorrected							    1
 HLT_DiPFJetAve500_v*							  hltAK4PFJetsTightIDCorrected							    1
+HLT_Ele105_CaloIdVT_GsfTrkIdT_v*					  hltEle105CaloIdVTGsfTrkIdTGsfDphiFilter					    1
+HLT_TkMu50_v*								  hltL3fL1sMu25f0TkFiltered50Q							    1
+HLT_PFHT650_WideJetMJJ900DEtaJJ1p5_v*					  hltFatDiPFJetMass900DR1p1Deta1p5						    1
+HLT_PFHT650_WideJetMJJ950DEtaJJ1p5_v*					  hltFatDiPFJetMass950DR1p1Deta1p5						    1
+HLT_AK8DiPFJet280_200_TrimMass30_v*                                       hltAK8PFJet200TrimModMass30                                                       1
+HLT_AK8DiPFJet280_200_TrimMass30_BTagCSV_p20_v*                           hltAK8PFJet200TrimModMass30                                                       1
 HLT_AK8PFJet450_v*							  hltSinglePFJet450AK8								    1
 HLT_PFJet450_v*								  hltSinglePFJet450								    1
 HLT_CaloJet500_NoJetID_v*						  hltSingleCaloJet500								    1
