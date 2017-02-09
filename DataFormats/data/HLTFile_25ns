@@ -196,3 +196,12 @@ HLT_DiPFJetAve260_v*							  hltAK4PFJetsTightIDCorrected							    1
 HLT_DiPFJetAve320_v*							  hltAK4PFJetsTightIDCorrected							    1
 HLT_DiPFJetAve400_v*							  hltAK4PFJetsTightIDCorrected							    1
 HLT_DiPFJetAve500_v*							  hltAK4PFJetsTightIDCorrected							    1
+HLT_Ele105_CaloIdVT_GsfTrkIdT_v*					  hltEle105CaloIdVTGsfTrkIdTGsfDphiFilter					    1
+HLT_TkMu50_v*								  hltL3fL1sMu25f0TkFiltered50Q							    1
+HLT_PFHT650_WideJetMJJ900DEtaJJ1p5_v*					  hltFatDiPFJetMass900DR1p1Deta1p5						    1
+HLT_PFHT650_WideJetMJJ950DEtaJJ1p5_v*					  hltFatDiPFJetMass950DR1p1Deta1p5						    1
+HLT_AK8DiPFJet280_200_TrimMass30_v*                                       hltAK8PFJet200TrimModMass30                                                       1
+HLT_AK8DiPFJet280_200_TrimMass30_BTagCSV_p20_v*                           hltAK8PFJet200TrimModMass30                                                       1
+HLT_AK8PFJet450_v*							  hltSinglePFJet450AK8								    1
+HLT_PFJet450_v*								  hltSinglePFJet450								    1
+HLT_CaloJet500_NoJetID_v*						  hltSingleCaloJet500								    1
