@@ -18,6 +18,14 @@ namespace baconhep
       e2_sdb2(0),e3_sdb2(0),e3_v1_sdb2(0),e3_v2_sdb2(0),e4_v1_sdb2(0),e4_v2_sdb2(0),
       qjet(0),
       tau1(-1), tau2(-1), tau3(-1), tau4(-1),doublecsv(0),Double_sub(0),
+      flavour(-1),nbHadrons(-1),nSV(-1),jetNTracks(-1),ncHadrons(-1),hadflavour(-1),
+      tau_flightDistance2dSig_1(-1),SubJet_csv(-1),z_ratio(-1),
+      trackSipdSig_3(-1),trackSipdSig_2(-1),trackSipdSig_1(-1),trackSipdSig_0(-1),
+      trackSipdSig_1_0(-1),trackSipdSig_0_0(-1),trackSipdSig_1_1(-1),trackSipdSig_0_1(-1),
+      trackSip2dSigAboveCharm_0(-1) ,trackSip2dSigAboveBottom_0(-1),trackSip2dSigAboveBottom_1(-1),
+      tau1_trackEtaRel_0(-1),tau1_trackEtaRel_1(-1),tau1_trackEtaRel_2(-1),tau0_trackEtaRel_0(-1),tau0_trackEtaRel_1(-1),tau0_trackEtaRel_2(-1),
+      tau_vertexMass_0(-1),tau_vertexEnergyRatio_0(-1),tau_vertexDeltaR_0(-1),tau_flightDistance2dSig_0(-1),tau_vertexMass_1(-1),tau_vertexEnergyRatio_1(-1),
+
       sj1_pt(0), sj1_eta(0), sj1_phi(0), sj1_m(0), sj1_csv(-2), sj1_qgid(-2), sj1_q(-100),
       sj2_pt(0), sj2_eta(0), sj2_phi(0), sj2_m(0), sj2_csv(-2), sj2_qgid(-2), sj2_q(-100),
       sj3_pt(0), sj3_eta(0), sj3_phi(0), sj3_m(0), sj3_csv(-2), sj3_qgid(-2), sj3_q(-100),
@@ -38,6 +46,14 @@ namespace baconhep
       float tau1, tau2, tau3, tau4;                                         // N-subjettiness
       float doublecsv;                                                      // Double b-tag 
       float Double_sub; 							    // Double b-tag with subjet b-tagging as additional input 
+      int flavour,nbHadrons,nSV,jetNTracks,ncHadrons,hadflavour;
+      float tau_flightDistance2dSig_1,SubJet_csv,z_ratio;
+      float trackSipdSig_3,trackSipdSig_2,trackSipdSig_1,trackSipdSig_0;
+      float trackSipdSig_1_0,trackSipdSig_0_0,trackSipdSig_1_1,trackSipdSig_0_1;
+      float trackSip2dSigAboveCharm_0 ,trackSip2dSigAboveBottom_0,trackSip2dSigAboveBottom_1;
+      float tau1_trackEtaRel_0,tau1_trackEtaRel_1,tau1_trackEtaRel_2,tau0_trackEtaRel_0,tau0_trackEtaRel_1,tau0_trackEtaRel_2;
+      float tau_vertexMass_0,tau_vertexEnergyRatio_0,tau_vertexDeltaR_0,tau_flightDistance2dSig_0,tau_vertexMass_1,tau_vertexEnergyRatio_1; 
+      
       
       // subjets from trimming (ordered by pT)
       float sj1_pt, sj1_eta, sj1_phi, sj1_m, sj1_csv, sj1_qgid, sj1_q;
