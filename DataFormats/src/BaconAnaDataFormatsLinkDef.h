@@ -15,6 +15,8 @@
 #include "BaconAna/DataFormats/interface/TVertex.hh"
 #include "BaconAna/DataFormats/interface/TPFPart.hh"
 #include "BaconAna/DataFormats/interface/TRHPart.hh"
+#include "BaconAna/DataFormats/interface/TGenVtx.hh"
+#include "BaconAna/DataFormats/interface/TSVtx.hh"
 #endif
 
 #ifdef __CINT__
@@ -30,6 +32,7 @@
 #pragma link C++ class baconhep::TGenEventInfo+;
 #pragma link C++ class baconhep::TGenParticle+;
 #pragma link C++ class baconhep::TGenJet+;
+#pragma link C++ class baconhep::TGenVtx+;
 #pragma link C++ class baconhep::TElectron+;
 #pragma link C++ class baconhep::TMuon+;
 #pragma link C++ class baconhep::TTau+;
@@ -40,4 +43,5 @@
 #pragma link C++ class baconhep::TVertex+;
 #pragma link C++ class baconhep::TPFPart+;
 #pragma link C++ class baconhep::TRHPart+;
+#pragma link C++ class baconhep::TSVtx+;
 #endif
