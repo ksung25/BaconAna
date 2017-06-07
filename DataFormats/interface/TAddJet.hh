@@ -16,6 +16,8 @@ namespace baconhep
       e2_b2(0),e3_b2(0),e3_v1_b2(0),e3_v2_b2(0),e4_v1_b2(0),e4_v2_b2(0),
       e2_sdb1(0),e3_sdb1(0),e3_v1_sdb1(0),e3_v2_sdb1(0),e4_v1_sdb1(0),e4_v2_sdb1(0),
       e2_sdb2(0),e3_sdb2(0),e3_v1_sdb2(0),e3_v2_sdb2(0),e4_v1_sdb2(0),e4_v2_sdb2(0),
+      e2_sdb4(0),e3_sdb4(0),e3_v1_sdb4(0),e3_v2_sdb4(0),e4_v1_sdb4(0),e4_v2_sdb4(0),
+      e2_sdb05(0),e3_sdb05(0),e3_v1_sdb05(0),e3_v2_sdb05(0),e4_v1_sdb05(0),e4_v2_sdb05(0),
       qjet(0),
       tau1(-1), tau2(-1), tau3(-1), tau4(-1),doublecsv(0),Double_sub(0),
       flavour(-1),nbHadrons(-1),nSV(-1),jetNTracks(-1),ncHadrons(-1),hadflavour(-1),
@@ -42,6 +44,8 @@ namespace baconhep
       float e2_b2,e3_b2,e3_v1_b2,e3_v2_b2,e4_v1_b2,e4_v2_b2;                // Correlation function in puts beta=2
       float e2_sdb1,e3_sdb1,e3_v1_sdb1,e3_v2_sdb1,e4_v1_sdb1,e4_v2_sdb1;                          // Soft Dropped correlation function in puts beta=1
       float e2_sdb2,e3_sdb2,e3_v1_sdb2,e3_v2_sdb2,e4_v1_sdb2,e4_v2_sdb2;                          // Soft Dropped correlation function in puts beta=2
+      float e2_sdb4,e3_sdb4,e3_v1_sdb4,e3_v2_sdb4,e4_v1_sdb4,e4_v2_sdb4;                          // Soft Dropped correlation function in puts beta=1
+      float e2_sdb05,e3_sdb05,e3_v1_sdb05,e3_v2_sdb05,e4_v1_sdb05,e4_v2_sdb05;                          // Soft Dropped correlation function in puts beta=2
       float qjet;                                                           // Q-jet volatility
       float tau1, tau2, tau3, tau4;                                         // N-subjettiness
       float doublecsv;                                                      // Double b-tag 
@@ -67,6 +71,9 @@ namespace baconhep
       unsigned int top_n_subjets;
       float        top_m_min, top_m_123, top_fRec;
       float        topchi2;
+
+      //svtx info
+      std::vector<Short_t> svtx;      
     ClassDef(TAddJet,11)
   };
   

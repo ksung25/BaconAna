@@ -3,6 +3,7 @@
 
 #include "BaconAna/DataFormats/interface/BaconAnaDefs.hh"
 #include <TObject.h>
+#include <vector>
 
 namespace baconhep
 {
@@ -19,7 +20,7 @@ namespace baconhep
       pullY(0), pullPhi(0), chPullY(0), chPullPhi(0), neuPullY(0), neuPullPhi(0),
       chEmFrac(0), neuEmFrac(0), chHadFrac(0), neuHadFrac(0), muonFrac(0),
       genpt(0), geneta(0), genphi(0), genm(0),
-      partonFlavor(0), hadronFlavor(0),
+      partonFlavor(0), hadronFlavor(0),vtxFlavor(0),
       nCharged(0), nNeutrals(0), nParticles(0),
       hltMatchBits(0)
       {}
@@ -38,9 +39,10 @@ namespace baconhep
       float          chPullY, chPullPhi, neuPullY, neuPullPhi;
       float          chEmFrac, neuEmFrac, chHadFrac, neuHadFrac, muonFrac;    // fractional energy contribution by type
       float          genpt, geneta, genphi, genm;                             // Matched GenJet
-      int            partonFlavor, hadronFlavor;                              // Flavor
+      int            partonFlavor,hadronFlavor,vtxFlavInfo,vtxFlavor;         // Flavor
       unsigned int   nCharged, nNeutrals, nParticles;                         // constituent multiplicity
       TriggerObjects hltMatchBits;                                            // HLT matching
+      std::vector<Short_t> pfCands;      
           
     ClassDef(TJet,6)
   };

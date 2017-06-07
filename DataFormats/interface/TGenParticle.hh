@@ -17,7 +17,8 @@ namespace baconhep
       int   parent;
       int   pdgId;
       int   status;
-      float pt, eta, phi, mass, y;
+      int   vtxId,vtxFlav;
+      float pt, eta, phi, mass, y, d0;
 
     ClassDef(TGenParticle,1)
   };

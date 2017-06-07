@@ -23,9 +23,11 @@ namespace baconhep
     int           pfType;
     int           vtxId;               // Vertex Id from Vertex Collection
     float         trkChi2;             // Track Chi2
+    float         pup;                 // Track Chi2
     float         vtxChi2;             // Vertex Chi2
     float         ecalE,hcalE;         // Calorimeter Energy
-    float         d0,dz,time,depth;    // Usefule Info
+    float         d0,dz,time,depth,d0Err; // Usefule Info
+    float         dptdpt,detadeta,dphidphi,dxydxy,dzdz,dxydz,dphidxy,dlambdadz;
     //float         deltaP;              // Uncertainty on P
     ClassDef(TPFPart,1)
   };
