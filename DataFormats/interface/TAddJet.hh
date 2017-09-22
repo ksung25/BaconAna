@@ -10,7 +10,7 @@ namespace baconhep
     public:
       TAddJet():
       index(-1),
-      mass_prun(0), mass_trim(0), mass_sd0(0),
+      mass_prun(0), mass_trim(0), mass_sd0(0), mass_rsd0(0),
       c2_0(0), c2_0P2(0), c2_0P5(0), c2_1P0(0), c2_2P0(0),
       e2_b1(0),e3_b1(0),e3_v1_b1(0),e3_v2_b1(0),e4_v1_b1(0),e4_v2_b1(0),
       e2_b2(0),e3_b2(0),e3_v1_b2(0),e3_v2_b2(0),e4_v1_b2(0),e4_v2_b2(0),
@@ -28,7 +28,7 @@ namespace baconhep
       ~TAddJet(){}
       
       unsigned int index;                                                   // index in original jet collection
-      float mass_prun, mass_trim, mass_sd0;                                 // groomed jet masses
+      float mass_prun, mass_trim, mass_sd0, mass_rsd0;                      // groomed jet masses
       float c2_0, c2_0P2, c2_0P5, c2_1P0, c2_2P0;                           // Correlation function with various exponents
       float e2_b1,e3_b1,e3_v1_b1,e3_v2_b1,e4_v1_b1,e4_v2_b1;                // Correlation function in puts beta=1
       float e2_b2,e3_b2,e3_v1_b2,e3_v2_b2,e4_v1_b2,e4_v2_b2;                // Correlation function in puts beta=2
