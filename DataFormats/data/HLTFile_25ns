@@ -205,14 +205,6 @@ HLT_AK8DiPFJet280_200_TrimMass30_BTagCSV_p20_v*                           hltAK8
 HLT_AK8PFJet450_v*                           				  hltSinglePFJet450AK8 								    1
 HLT_PFJet450_v*                               				  hltSinglePFJet450 								    1
 HLT_CaloJet500_NoJetID_v*                         			  hltSingleCaloJet500 								    1
-HLT_DoubleJetsC100_DoubleBTagCSV_p026_DoublePFJetsC160_v*    		  hltBTagCaloCSVp026DoubleWithMatching                                              1
-HLT_DoubleJetsC100_DoubleBTagCSV_p026_DoublePFJetsC160_v*            	  hltDoublePFJetsC160                                                       	    2
-HLT_DoubleJetsC100_DoubleBTagCSV_p014_DoublePFJetsC100MaxDeta1p6_v*	  hltBTagCaloCSVp014DoubleWithMatching                                              1
-HLT_DoubleJetsC100_DoubleBTagCSV_p014_DoublePFJetsC100MaxDeta1p6_v*	  hltDoublePFJetsC100MaxDeta1p6                                                     2
-HLT_DoubleJetsC112_DoubleBTagCSV_p026_DoublePFJetsC172_v*          	  hltBTagCaloCSVp026DoubleWithMatching                                              1
-HLT_DoubleJetsC112_DoubleBTagCSV_p026_DoublePFJetsC172_v*		  hltDoublePFJetsC172                                                               2
-HLT_DoubleJetsC112_DoubleBTagCSV_p014_DoublePFJetsC112MaxDeta1p6_v*   	  hltBTagCaloCSVp014DoubleWithMatching                                              1
-HLT_DoubleJetsC112_DoubleBTagCSV_p014_DoublePFJetsC112MaxDeta1p6_v* 	  hltDoublePFJetsC112MaxDeta1p6                                                     2
 HLT_Ele28_HighEta_SC20_Mass55_v*                         		  hltEle28HighEtaSC20Mass55Filter 						    1
 HLT_Ele135_CaloIdVT_GsfTrkIdT_v*					  hltEle135CaloIdVTGsfTrkIdTGsfDphiFilter					    1
 HLT_Ele145_CaloIdVT_GsfTrkIdT_v*					  hltEle145CaloIdVTGsfTrkIdTGsfDphiFilter					    1
@@ -247,8 +239,12 @@ HLT_Mu19_v* 								  hltL3fL1sMu10lqL1f0L2f10L3Filtered19 						    1
 HLT_DoubleL2Mu50_v* 							  hltL2fL1sMuORL1f0DoubleL2AllBxFiltered50Q 					    1
 HLT_Mu19_TrkIsoVVL_Mu9_TrkIsoVVL_DZ_Mass8_v* 				  hltDiMuon199Mass8Filtered 							    1
 HLT_DoublePFJets100MaxDeta1p6_DoubleCaloBTagCSV_p33_v*			  hltDoublePFJets100Eta2p3MaxDeta1p6 						    1
+HLT_DoublePFJets116MaxDeta1p6_DoubleCaloBTagCSV_p33_v*			  hltDoublePFJets116Eta2p3MaxDeta1p6						    1
+HLT_DoublePFJets128MaxDeta1p6_DoubleCaloBTagCSV_p33_v*			  hltDoublePFJets128Eta2p3MaxDeta1p6						    1
 HLT_DoublePFJets100_CaloBTagCSV_p33_v*  				  hltDoublePFJets100Eta2p3 							    1
+HLT_DoublePFJets200_CaloBTagCSV_p33_v*					  hltDoublePFJets200Eta2p3							    1
 HLT_DoublePFJets350_CaloBTagCSV_p33_v*  				  hltDoublePFJets350Eta2p3 							    1
+HLT_DoublePFJets40_CaloBTagCSV_p33_v*					  hltDoublePFJets40Eta2p3							    1
 HLT_AK8PFHT750_TrimMass50_v* 						  hltAK8PFHT750 								    1
 HLT_AK8PFHT800_TrimMass50_v* 						  hltAK8PFHT800 								    1
 HLT_AK8PFHT850_TrimMass50_v* 						  hltAK8PFHT850 								    1
