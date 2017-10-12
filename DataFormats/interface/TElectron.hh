@@ -23,6 +23,7 @@ namespace baconhep
       eoverp(0), hovere(0), fbrem(0),
       dEtaInSeed(0), dEtaIn(0), dPhiIn(0),
       mva(-999.),
+      regscale(0.),regsmear(0.),
       q(0),
       isConv(false), nMissingHits(0),
       typeBits(0), fiducialBits(0), classification(-999.),
@@ -47,23 +48,32 @@ namespace baconhep
       float          fbrem;                                    // brem fraction
       float          dEtaInSeed, dEtaIn, dPhiIn;               // track-supercluster matching
       float          mva;                                      // electron ID MVA value
+      float          mvaCat;                                   // electron ID MVA category
+      float          regscale,regsmear;                        //Regression scale and smear corrections
       int            q;                                        // charge
       bool           isConv;                                   // identified by track fit based conversion finder?
       unsigned int   nMissingHits;                             // number of missing expected inner hits 
       unsigned int   typeBits;                                 // electron type
       unsigned int   fiducialBits;                             // ECAL fiducial region bits
+      unsigned int   mvaBit;                                   // Pass Ele MVA working point
       int            classification;                           // electron classification
       int            scID;                                     // supercluster ID number (unique per event)
       int            trkID;                                    // track ID number (unique per event)
       TriggerObjects hltMatchBits;                             // HLT matches
       
-    ClassDef(TElectron,2)
+    ClassDef(TElectron,4)
   };
 
   enum EEleType
   {
     kEcalDriven    = 1,
     kTrackerDriven = 2
+  };
+
+  enum EEleId
+  {
+    kEleMVAMedBit    = 1,
+    kEleMVATrightBit = 2
   };
 }
 #endif

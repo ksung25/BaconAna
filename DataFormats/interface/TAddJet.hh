@@ -51,7 +51,8 @@ namespace baconhep
       unsigned int top_n_subjets;
       float        top_m_min, top_m_123, top_fRec;
       float        topchi2;
-    ClassDef(TAddJet,11)
+      std::vector<Short_t> svtx;     
+    ClassDef(TAddJet,12)
   };
   
   enum ETopTagType
