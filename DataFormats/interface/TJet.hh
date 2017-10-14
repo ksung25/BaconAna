@@ -28,7 +28,7 @@ namespace baconhep
       float          pt, eta, phi, mass, ptRaw, unc;                          // kinematics
       float          area;                                                    // jet area (from FastJet)
       float          d0, dz;                                                  // impact parameter of leading charged constituent
-      float          leadPt,lepPt,lepDR,vtx3DSig,ptreg,vtxMass;                       // Info for b-jet regression
+      float          leadPt,lepPt,lepDR,vtx3DSig,vtx3DVal,ptreg,vtxMass,vtxPt,vtxNtk;                       // Info for b-jet regression
       float          csv,bmva,cvb,cvl;                                        // CSV b-taggers/c-tagger for the jet
       float          qgid, axis2, ptD;                                        // q/g discriminator and input variables
       int            mult;
