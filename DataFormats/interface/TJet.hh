@@ -3,6 +3,7 @@
 
 #include "BaconAna/DataFormats/interface/BaconAnaDefs.hh"
 #include <TObject.h>
+#include <vector>
 
 namespace baconhep
 {
@@ -42,6 +43,7 @@ namespace baconhep
       int            partonFlavor,hadronFlavor,vtxFlavInfo,vtxFlavor;         // Flavor
       unsigned int   nCharged, nNeutrals, nParticles;                         // constituent multiplicity
       TriggerObjects hltMatchBits;                                            // HLT matching
+      std::vector<Short_t> pfCands;      
           
     ClassDef(TJet,6)
   };
