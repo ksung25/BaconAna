@@ -20,6 +20,9 @@ namespace baconhep
     float phi  ;
     float mass ;
 
+    float msd, e2sdb1, e3_v2_sdb1; 
+
+    /*
     float elept       ;
     float eleeta      ;
     float elephi      ;
@@ -47,7 +50,7 @@ namespace baconhep
     float mtrim       ;
     float tau1        ;
     float tau2        ;
-
+    */
     ClassDef(TGenJet,1)
   };
 }
