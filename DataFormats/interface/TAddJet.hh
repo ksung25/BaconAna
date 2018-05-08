@@ -19,7 +19,7 @@ namespace baconhep
       e2_sdb4(0),e3_sdb4(0),e3_v1_sdb4(0),e3_v2_sdb4(0),e4_v1_sdb4(0),e4_v2_sdb4(0),
       e2_sdb05(0),e3_sdb05(0),e3_v1_sdb05(0),e3_v2_sdb05(0),e4_v1_sdb05(0),e4_v2_sdb05(0),
       qjet(0),
-      tau1(-1), tau2(-1), tau3(-1), tau4(-1),doublecsv(0),Double_sub(0),
+      tau1(-1), tau2(-1), tau3(-1), tau4(-1),doublecsv(0),Double_sub(0),deepdoubleb(0),
       sj1_pt(0), sj1_eta(0), sj1_phi(0), sj1_m(0), sj1_csv(-2), sj1_qgid(-2), sj1_q(-100),
       sj2_pt(0), sj2_eta(0), sj2_phi(0), sj2_m(0), sj2_csv(-2), sj2_qgid(-2), sj2_q(-100),
       sj3_pt(0), sj3_eta(0), sj3_phi(0), sj3_m(0), sj3_csv(-2), sj3_qgid(-2), sj3_q(-100),
@@ -49,6 +49,7 @@ namespace baconhep
       float tau1, tau2, tau3, tau4;                                         // N-subjettiness
       float doublecsv;                                                      // Double b-tag 
       float Double_sub; 					    	    // Double b-tag with subjet b-tagging as additional input 
+      float deepdoubleb; 					    	    // Deep double b-tag
       
       // subjets from trimming (ordered by pT)
       float sj1_pt, sj1_eta, sj1_phi, sj1_m, sj1_csv, sj1_qgid, sj1_q;
