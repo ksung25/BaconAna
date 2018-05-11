@@ -23,6 +23,7 @@ namespace baconhep
       eoverp(0), hovere(0), fbrem(0),
       dEtaInSeed(0), dEtaIn(0), dPhiIn(0),
       mva(-999.),
+      mvaIso(-999.),
       regscale(0.),regsmear(0.),
       q(0),
       isConv(false), nMissingHits(0),
@@ -49,6 +50,8 @@ namespace baconhep
       float          dEtaInSeed, dEtaIn, dPhiIn;               // track-supercluster matching
       float          mva;                                      // electron ID MVA value
       float          mvaCat;                                   // electron ID MVA category
+      float          mvaIso;                                   // electron ID Iso MVA value
+      float          mvaIsoCat;                                // electron ID Iso MVA category
       float          regscale,regsmear;                        //Regression scale and smear corrections
       int            q;                                        // charge
       bool           isConv;                                   // identified by track fit based conversion finder?
@@ -56,6 +59,7 @@ namespace baconhep
       unsigned int   typeBits;                                 // electron type
       unsigned int   fiducialBits;                             // ECAL fiducial region bits
       unsigned int   mvaBit;                                   // Pass Ele MVA working point
+      unsigned int   mvaIsoBit;                                // Pass Ele Iso MVA working point
       int            classification;                           // electron classification
       int            scID;                                     // supercluster ID number (unique per event)
       int            trkID;                                    // track ID number (unique per event)
@@ -73,7 +77,7 @@ namespace baconhep
   enum EEleId
   {
     kEleMVAMedBit    = 1,
-    kEleMVATrightBit = 2
+    kEleMVATightBit = 2
   };
 }
 #endif
