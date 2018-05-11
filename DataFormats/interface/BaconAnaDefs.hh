@@ -36,7 +36,8 @@ enum EMETFilterFailBit
   kGlobalSuperTightHalo2016Filter       = 16384,
   kGlobalTightHalo2016Filter            = 32768,
   kBadChCandFilter                      = 65536,
-  kBadPFMuonFilter                      = 131072
+  kBadPFMuonFilter                      = 131072,
+  kEcalBadCalibFilter                   = 262144
 };
 
 const unsigned int kNTrigBit = 256;
