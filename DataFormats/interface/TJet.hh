@@ -16,6 +16,7 @@ namespace baconhep
       bjetcorr(1),bjetres(0),
       csv(-2),bmva(-2),cvb(-2),cvl(-2),
       deepcsvb(-10),deepcsvc(-10),deepcsvl(-10),deepcsvbb(-10),
+      deepcmvab(-10),deepcmvac(-10),deepcmval(-10),deepcmvabb(-10),
       qgid(-2), axis2(0), ptD(0), mult(0),
       q(0),
       mva(-2), beta(0), betaStar(0), dR2Mean(0),
@@ -35,6 +36,7 @@ namespace baconhep
       float          bjetcorr, bjetres;
       float          csv,bmva,cvb,cvl;                                        // CSV b-taggers/c-tagger for the jet
       float          deepcsvb,deepcsvc,deepcsvl,deepcsvbb;                    // DeepCSV            
+      float          deepcmvab,deepcmvac,deepcmval,deepcmvabb;                // DeepCMVA
       float          qgid, axis2, ptD;                                        // q/g discriminator and input variables
       int            mult;
       float          q;                                                       // Charge for jet and subjets
