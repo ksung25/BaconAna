@@ -287,3 +287,5 @@ HLT_QuadPFJet111_90_80_15_PFBTagDeepCSV_1p3_VBF2_v*		  	  hltDoublePFJets100Eta2
 HLT_HLT_PFHT330PT30_QuadPFJet_75_60_45_40_TriplePFBTagDeepCSV_4p5_v*	  hltDoublePFJets100Eta2p3                                                          1
 HLT_DoublePFJets116MaxDeta1p6_DoubleCaloBTagDeepCSV_p71_v*		  hltDoublePFJets100Eta2p3                                                          1
 HLT_DoublePFJets128MaxDeta1p6_DoubleCaloBTagDeepCSV_p71_v*		  hltDoublePFJets100Eta2p3                                                          1
+HLT_Mu100_v*                                                              hltL3fL1sMu22Or25L1f0L2f10QL3Filtered50Q                                          1
+HLT_OldMu100_v*                                                           hltL3fL1sMu22Or25L1f0L2f10QL3Filtered50Q                                          1
