@@ -10,7 +10,9 @@ namespace baconhep
     public:
       TGenParticle():
 	parent(-1), pdgId(0),status(0),
-	pt(0), eta(0), phi(0), mass(0), y(0)
+	pt(0), eta(0), phi(0), mass(0), y(0),
+    isPromptFinalState(false),  isDirectPromptTauDecayProductFinalState(false), isHardProcess(false),
+    fromHardProcessDecayed(false), fromHardProcessFinalState(false), isPromptDecayed(false)
       {}
       ~TGenParticle(){}
 
@@ -18,8 +20,9 @@ namespace baconhep
       int   pdgId;
       int   status;
       float pt, eta, phi, mass, y;
+      bool isPromptFinalState, isDirectPromptTauDecayProductFinalState, isHardProcess, fromHardProcessDecayed, fromHardProcessFinalState, isPromptDecayed;
 
-    ClassDef(TGenParticle,1)
+    ClassDef(TGenParticle,2)
   };
 }
 #endif
