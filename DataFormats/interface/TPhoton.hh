@@ -12,6 +12,7 @@ namespace baconhep
       TPhoton():
       pt(0), eta(0), phi(0),
       scEt(0), scEta(0), scPhi(0),
+      calibPt(0), calibE(0),
       trkIso(-1), ecalIso(-1), hcalIso(-1),
       chHadIso(-1), gammaIso(-1), neuHadIso(-1),
 //      chHadIsoSelVtx, chHadIso03WstVtx;
@@ -27,6 +28,7 @@ namespace baconhep
     
       float          pt, eta, phi;                         // kinematics
       float          scEt, scEta, scPhi;                   // SuperCluster kinematics
+      float          calibPt, calibE;                // calibrated kinematics
       float          trkIso, ecalIso, hcalIso;             // detector isolation
       float          chHadIso, gammaIso, neuHadIso;        // PF isolation variables
 //      float          chHadIsoSelVtx,chHadIso03WstVtx;      // Isolation from the PV vs worst vertex Iso
@@ -42,7 +44,7 @@ namespace baconhep
       bool           isConv;                               
       TriggerObjects hltMatchBits;                         // HLT matches
           
-    ClassDef(TPhoton,2)
+    ClassDef(TPhoton,3)
   };
 
   enum EPhotonType
