@@ -10,7 +10,7 @@ namespace baconhep
   {
     public:
       TElectron():
-      pt(0), eta(0), phi(0),
+      pt(0), eta(0), phi(0), calibPt(0), calibE(0),
       scEt(0), scEta(0), scPhi(0), ecalEnergy(0),
       pfPt(0), pfEta(0), pfPhi(0),
       trkIso(-1), ecalIso(-1), hcalIso(-1), hcalDepth1Iso(-1),
@@ -33,7 +33,7 @@ namespace baconhep
       {}
       ~TElectron(){}
     
-      float          pt, eta, phi;                             // kinematics
+      float          pt, eta, phi, calibPt, calibE;            // kinematics
       float          scEt, scEta, scPhi;                       // supercluster kinematics
       float          ecalEnergy;                               // ECAL energy
       float          pfPt, pfEta, pfPhi;                       // matching PF-candidate kinematics
@@ -65,7 +65,7 @@ namespace baconhep
       int            trkID;                                    // track ID number (unique per event)
       TriggerObjects hltMatchBits;                             // HLT matches
       
-    ClassDef(TElectron,4)
+    ClassDef(TElectron,5)
   };
 
   enum EEleType
