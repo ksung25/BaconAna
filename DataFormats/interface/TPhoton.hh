@@ -16,7 +16,7 @@ namespace baconhep
       trkIso(-1), ecalIso(-1), hcalIso(-1),
       chHadIso(-1), gammaIso(-1), neuHadIso(-1),
 //      chHadIsoSelVtx, chHadIso03WstVtx;
-      mva(0),
+      mva(-999.), mvaV2(-999.), 
       hovere(0), sthovere(0), sieie(0), sipip(0), r9(0), r9_full5x5(0),
       fiducialBits(0),
       typeBits(0),
@@ -33,6 +33,8 @@ namespace baconhep
       float          chHadIso, gammaIso, neuHadIso;        // PF isolation variables
 //      float          chHadIsoSelVtx,chHadIso03WstVtx;      // Isolation from the PV vs worst vertex Iso
       float          mva;                                  // Photon MVA ID
+      float          mvaV2;                                // Photon MVA V2 ID
+      float          mvaCat, mvaV2Cat;                     // Photon MVA categories
       float          hovere;                               // H/E
       float          sthovere;                             // Single tower H/E (https://twiki.cern.ch/twiki/bin/viewauth/CMS/HoverE2012)
       float          sieie, sipip, r9, r9_full5x5;         // shower shape
