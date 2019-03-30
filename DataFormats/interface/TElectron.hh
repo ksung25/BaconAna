@@ -24,6 +24,7 @@ namespace baconhep
       dEtaInSeed(0), dEtaIn(0), dPhiIn(0),
       mva(-999.),
       mvaIso(-999.),
+      mvaV2Iso(-999.), mvaV2NoIso(-999.),
       regscale(0.),regsmear(0.),
       q(0),
       isConv(false), nMissingHits(0),
@@ -52,6 +53,8 @@ namespace baconhep
       float          mvaCat;                                   // electron ID MVA category
       float          mvaIso;                                   // electron ID Iso MVA value
       float          mvaIsoCat;                                // electron ID Iso MVA category
+      float          mvaV2Iso, mvaV2NoIso;                     // electron V2 MVA IDs
+      float          mvaV2IsoCat, mvaV2NoIsoCat;               // electron V2 MVA ID category
       float          regscale,regsmear;                        //Regression scale and smear corrections
       int            q;                                        // charge
       bool           isConv;                                   // identified by track fit based conversion finder?
@@ -65,7 +68,7 @@ namespace baconhep
       int            trkID;                                    // track ID number (unique per event)
       TriggerObjects hltMatchBits;                             // HLT matches
       
-    ClassDef(TElectron,5)
+    ClassDef(TElectron,6)
   };
 
   enum EEleType
