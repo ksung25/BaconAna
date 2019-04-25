@@ -16,6 +16,7 @@ namespace baconhep
       nPUmean(0), nPUmeanm(0), nPUmeanp(0),
       pvx(0), pvy(0), pvz(0),
       bsx(0), bsy(0), bsz(0), 
+      prefweight(-1), prefweightUp(-1), prefweightDown(-1), 
       caloMET(0), caloMETphi(0),//  caloMETCov00(0),  caloMETCov01(0),  caloMETCov11(0),
       pfMET(0),  pfMETphi(0),  pfMETCov00(0),  pfMETCov01(0),  pfMETCov11(0),
       pfMETC(0), pfMETCphi(0), pfMETCCov00(0), pfMETCCov01(0), pfMETCCov11(0),
@@ -41,6 +42,7 @@ namespace baconhep
       float         nPUmean, nPUmeanm, nPUmeanp;               // expected number of reconstructed pile-up vertices
       float         pvx, pvy, pvz;                             // best primary vertex
       float         bsx, bsy, bsz;                             // beamspot
+      double        prefweight, prefweightUp, prefweightDown;  // egamma prefiring weights (and systematics)
       float         caloMET, caloMETphi;                       // calo MET
       //float         caloMETCov00, caloMETCov01, caloMETCov11;
       float         pfMET,   pfMETphi;                           // particle flow MET
@@ -64,7 +66,7 @@ namespace baconhep
       TriggerBits   triggerBits;                               // fired trigger bits
       bool          hasGoodPV;                                 // event has a good PV?
 
-    ClassDef(TEventInfo,8)
+    ClassDef(TEventInfo,9)
   };
 }
 #endif
