@@ -76,6 +76,8 @@ HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v*                                  hltL3f
 HLT_Mu17_TrkIsoVVL_TkMu8_TrkIsoVVL_DZ_v*                                  hltDiMuonGlb17Trk8RelTrkIsoFiltered0p4                                            2
 HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v*                            hltL3fL1DoubleMu155fFiltered17                                                    1 
 HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8_v*                            hltDiMuon178RelTrkIsoFiltered0p4                                                  2 
+HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v*                              hltL3fL1DoubleMu155fFiltered17                                                    1 
+HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass8_v*                              hltDiMuon178RelTrkIsoFiltered0p4                                                  2 
 HLT_Mu7p5_Track2_Jpsi_v*                                                  hltMu7p5Track2JpsiTrackMassFiltered                                               1
 HLT_Mu7p5_Track7_Jpsi_v*                                                  hltMu7p5Track7JpsiTrackMassFiltered                                               1
 HLT_Mu7p5_Track2_Upsilon_v*                                               hltMu7p5Track2UpsilonTrackMassFiltered                                            1
