@@ -40,9 +40,9 @@ enum EMETFilterFailBit
   kEcalBadCalibFilter                   = 262144
 };
 
-const unsigned int kNTrigBit = 256;
+const unsigned int kNTrigBit = 512;
 typedef std::bitset<kNTrigBit> TriggerBits;
-const unsigned int kNTrigObjectBit = 256;
+const unsigned int kNTrigObjectBit = 512;
 typedef std::bitset<kNTrigObjectBit> TriggerObjects;
 
 #endif
